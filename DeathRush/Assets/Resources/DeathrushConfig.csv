@@ -1,0 +1,7 @@
+name,resistance,topAcceleration,damage,topSpeed,turbo,weaponCost,chaosReductionOnWin,chaosIncressOnDeath,extraCredits
+soldier,10,0,10,-5,-5,0,0,0,0
+berserk,-5,0,10,0,0,0,0,0,0
+runner,-5,10,-5,10,0,0,0,0,0
+technician,0,0,0,0,0,-20,0,0,0
+superstar,0,0,0,0,0,0,25,20,0
+liveForAnotherDay,0,0,0,0,0,0,0,0,10

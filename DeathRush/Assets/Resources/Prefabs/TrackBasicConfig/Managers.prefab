@@ -1,0 +1,180 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &195558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 491006}
+  - component: {fileID: 11439498}
+  - component: {fileID: 11476202}
+  - component: {fileID: 11424744}
+  - component: {fileID: 11482334}
+  - component: {fileID: 11486792}
+  - component: {fileID: 11425896}
+  - component: {fileID: 11499030}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Managers
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &491006
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195558}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11424744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d613fcb01e598f43b8416bdc870528b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedpmeterNeedleImage: {fileID: 0}
+  lapsText: {fileID: 0}
+  killFeedText: {fileID: 0}
+  damageControlText: {fileID: 0}
+  endRaceColor: {r: 0.109915674, g: 0.78676474, b: 0.11458356, a: 0}
+  enemiesColor: {r: 1, g: 1, b: 1, a: 0}
+  playerColor: {r: 0.87367964, g: 1, b: 0.0745098, a: 0}
+  destroyedColor: {r: 0.9264706, g: 0.20436849, b: 0.20436849, a: 0}
+  textPositionContainer: {fileID: 0}
+  killFeedTimer: 3
+  killFeedStrings:
+  - Enemy Crushed!
+  - Motorized Menace!
+  - Killer Record!
+  - Bloody Rampage!
+  - DEATHRUSH
+  showDamagecontrolCountdown: 0
+--- !u!114 &11425896
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf39a0703fad1e428d4388e8f3ee840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 689f7f1749ad10c49a4d175382ea15a2, type: 3}
+  - {fileID: 8300000, guid: 1792989a5a33779428d2dbe9a9430605, type: 3}
+  - {fileID: 8300000, guid: 314fbc5d108c1dd46b4b4c31f2a1324a, type: 3}
+  - {fileID: 8300000, guid: 026f7d70cd34fe647bcf1f5ca69be4ae, type: 3}
+  - {fileID: 8300000, guid: 80bbc29abeff0774883ce5a2df36e757, type: 3}
+  - {fileID: 8300000, guid: 6687ea06eeb59e1438bd61833e77fd22, type: 3}
+  - {fileID: 8300000, guid: 36aafc8974309b447816ebdbd50ca98d, type: 3}
+  mainCamera: {fileID: 0}
+  channelCount: 20
+--- !u!114 &11439498
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 560b7483d8fe8004e9db1bfa4c162837, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  youWin: {fileID: 0}
+  raceFinishedText: {fileID: 0}
+  youDiedText: {fileID: 0}
+  restartButton: {fileID: 0}
+  scoreBackground: {fileID: 0}
+  pauseCanvas: {fileID: 0}
+  continueAfterRaceControlPrefab: {fileID: 152514, guid: c59789a1e93e04a4d9c304820329135a,
+    type: 2}
+  IAVehiclesPrefabs:
+  - {fileID: 1356399974119736, guid: ec7a9492cd677064da2463ce1c0c63da, type: 2}
+  - {fileID: 1714576018971488, guid: aaa8317553711674192403c723a3f112, type: 2}
+  - {fileID: 100270, guid: d962b3be01fd1474f9fe6ba4454ab7f1, type: 2}
+  - {fileID: 1258894530583344, guid: 712b84a159fe2ca499d4bc0286f437b9, type: 2}
+--- !u!114 &11476202
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3992bc6b4469004fb7f7997cdf0c7c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 179808, guid: 8ce189ac209b3b84eb19fedeadf411d5, type: 2}
+  molotovPrefab: {fileID: 153308, guid: 36c4a9cd70f8dc2468407ad2c798e530, type: 2}
+  rocketLauncherPrefab: {fileID: 188932, guid: c7ae7c08a2a93cf4daac21aa2c6ae70b, type: 2}
+  rocketLockPrefab: {fileID: 188932, guid: 999fe62e95ad83644a0afdb91818bc2c, type: 2}
+  sawBladePrefab: {fileID: 150324, guid: 573270d4916385d43ab1943f126d7cc8, type: 2}
+  fireFloor: {fileID: 0}
+--- !u!114 &11482334
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e65daad2f3aa149ab116942f602e26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimapPointPrefab: {fileID: 143880, guid: f8e7346e104b08f45b8f95fb85206e6c, type: 2}
+  playerMinimapTexture: {fileID: 2100000, guid: 5c7805803ff175649a17e6426ad67e8c,
+    type: 2}
+  enemyMinimapTexture: {fileID: 2100000, guid: 2ceec1a85c57c724381a2f2262f17d35, type: 2}
+--- !u!114 &11486792
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cc7477391fc9c64c81011ace8941f5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11499030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7eb55297b76d56469eb403a47734ac3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vehiclePlayer: {fileID: 0}
+  vehiclesIAs: []
+  closestDistance: 15
+  closeDistance: 25
+  farDistance: 35
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 195558}
+  m_IsPrefabParent: 1

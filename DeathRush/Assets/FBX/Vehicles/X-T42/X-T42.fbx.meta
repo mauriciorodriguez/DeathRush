@@ -1,0 +1,133 @@
+fileFormatVersion: 2
+guid: f1e1ef9f280ab6140bfa85570c0462eb
+timeCreated: 1477014405
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Chassis
+    100002: Fan1
+    100004: Fan2
+    100006: Fan3
+    100008: Fan4
+    100010: Fans
+    100012: Satellite
+    100014: //RootNode
+    100016: Fan_FL
+    100018: Fan_FR
+    100020: Fan_RL
+    100022: Fan_RR
+    100024: ChangePivot_Fan_FL
+    100026: ChangePivot_Fan_FR
+    100028: ChangePivot_Fan_RL
+    100030: ChangePivot_Fan_RR
+    400000: Chassis
+    400002: Fan1
+    400004: Fan2
+    400006: Fan3
+    400008: Fan4
+    400010: Fans
+    400012: Satellite
+    400014: //RootNode
+    400016: Fan_FL
+    400018: Fan_FR
+    400020: Fan_RL
+    400022: Fan_RR
+    400024: ChangePivot_Fan_FL
+    400026: ChangePivot_Fan_FR
+    400028: ChangePivot_Fan_RL
+    400030: ChangePivot_Fan_RR
+    2300000: Chassis
+    2300002: Fan1
+    2300004: Fan2
+    2300006: Fan3
+    2300008: Fan4
+    2300010: Satellite
+    2300012: Fan_FL
+    2300014: Fan_FR
+    2300016: Fan_RL
+    2300018: Fan_RR
+    3300000: Chassis
+    3300002: Fan1
+    3300004: Fan2
+    3300006: Fan3
+    3300008: Fan4
+    3300010: Satellite
+    3300012: Fan_FL
+    3300014: Fan_FR
+    3300016: Fan_RL
+    3300018: Fan_RR
+    4300000: Satellite
+    4300002: Chassis
+    4300004: Fan2
+    4300006: Fan1
+    4300008: Fan3
+    4300010: Fan4
+    4300012: Fan_FL
+    4300014: Fan_RL
+    4300016: Fan_RR
+    4300018: Fan_FR
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

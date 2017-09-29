@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: 33dd875495a9833448b2ca05bbca4a09
+timeCreated: 1505588275
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Box1532
+    100002: Cylinder008
+    100004: //RootNode
+    100006: LampPostCollider1
+    100008: LampPostCollider2
+    100010: Light
+    100012: Post
+    100014: LampPostRigidbody
+    100016: LampPostCollider003
+    100018: LampPostCollider004
+    100020: Light001
+    100022: Post003
+    100024: SetOff
+    400000: Box1532
+    400002: Cylinder008
+    400004: //RootNode
+    400006: LampPostCollider1
+    400008: LampPostCollider2
+    400010: Light
+    400012: Post
+    400014: LampPostRigidbody
+    400016: LampPostCollider003
+    400018: LampPostCollider004
+    400020: Light001
+    400022: Post003
+    400024: SetOff
+    2300000: Box1532
+    2300002: Cylinder008
+    2300004: LampPostCollider1
+    2300006: LampPostCollider2
+    2300008: Light
+    2300010: Post
+    2300012: LampPostCollider003
+    2300014: LampPostCollider004
+    2300016: Light001
+    2300018: Post003
+    2300020: SetOff
+    3300000: Box1532
+    3300002: Cylinder008
+    3300004: LampPostCollider1
+    3300006: LampPostCollider2
+    3300008: Light
+    3300010: Post
+    3300012: LampPostCollider003
+    3300014: LampPostCollider004
+    3300016: Light001
+    3300018: Post003
+    3300020: SetOff
+    4300000: Box1532
+    4300002: Cylinder008
+    4300004: Light
+    4300006: Post
+    4300008: LampPostCollider2
+    4300010: LampPostCollider1
+    4300012: LampPostCollider004
+    4300014: Light001
+    4300016: Post003
+    4300018: LampPostCollider003
+    4300020: SetOff
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

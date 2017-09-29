@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde7a65cec1006c4cb4b62e5f8c6f4de, type: 3}
+  m_Name: IABuggy
+  m_EditorClassIdentifier: 
+  vehicleType: 0
+  vehicleName: Hannah
+  nitroPower: 10000
+  nitroTimer: 1.5
+  rechargeNitro: 1.5
+  resetTime: 3.5
+  wheelDriveType: 0
+  handBrakeForce: 6000
+  brakeForce: 500
+  torque: 3300
+  topSpeed: 630
+  topReverseSpeed: 50
+  downForce: 100
+  stuckForceVehicle: 700
+  minSteerAngle: 5
+  maxSteerAngle: 15
+  minSidewaysFriction: 4.5
+  maxSidewaysFriction: 6
+  stuckToTheFloor: 0

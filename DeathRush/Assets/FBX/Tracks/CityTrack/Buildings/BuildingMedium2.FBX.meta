@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: ad9fdfdf01c3547499bddef8743b3070
+timeCreated: 1505575144
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Box1805
+    100002: Box1806
+    100004: Box1807
+    100006: Box1808
+    100008: Box1809
+    100010: Box1810
+    100012: Box1811
+    100014: Box1812
+    100016: Box1813
+    100018: Box1814
+    100020: Box1815
+    100022: Box1816
+    100024: Box1817
+    100026: Box1818
+    100028: Box1819
+    100030: Box1820
+    100032: Box1821
+    100034: //RootNode
+    100036: BuildingMedium2
+    100038: Wood board
+    100040: BuildingMedium2 1
+    100042: BuildingMedium2Collider
+    400000: Box1805
+    400002: Box1806
+    400004: Box1807
+    400006: Box1808
+    400008: Box1809
+    400010: Box1810
+    400012: Box1811
+    400014: Box1812
+    400016: Box1813
+    400018: Box1814
+    400020: Box1815
+    400022: Box1816
+    400024: Box1817
+    400026: Box1818
+    400028: Box1819
+    400030: Box1820
+    400032: Box1821
+    400034: BuildingMedium2
+    400036: //RootNode
+    400038: Wood board
+    400040: BuildingMedium2 1
+    400042: BuildingMedium2Collider
+    2300000: Box1805
+    2300002: Box1806
+    2300004: Box1807
+    2300006: Box1808
+    2300008: Box1809
+    2300010: Box1810
+    2300012: Box1811
+    2300014: Box1812
+    2300016: Box1813
+    2300018: Box1814
+    2300020: Box1815
+    2300022: Box1816
+    2300024: Box1817
+    2300026: Box1818
+    2300028: Box1819
+    2300030: Box1820
+    2300032: Box1821
+    2300034: BuildingMedium2
+    2300036: BuildingMedium2 1
+    2300038: BuildingMedium2Collider
+    3300000: Box1805
+    3300002: Box1806
+    3300004: Box1807
+    3300006: Box1808
+    3300008: Box1809
+    3300010: Box1810
+    3300012: Box1811
+    3300014: Box1812
+    3300016: Box1813
+    3300018: Box1814
+    3300020: Box1815
+    3300022: Box1816
+    3300024: Box1817
+    3300026: Box1818
+    3300028: Box1819
+    3300030: Box1820
+    3300032: Box1821
+    3300034: BuildingMedium2
+    3300036: BuildingMedium2 1
+    3300038: BuildingMedium2Collider
+    4300000: BuildingMedium2
+    4300002: Box1813
+    4300004: Box1805
+    4300006: Box1806
+    4300008: Box1807
+    4300010: Box1808
+    4300012: Box1809
+    4300014: Box1810
+    4300016: Box1811
+    4300018: Box1812
+    4300020: Box1821
+    4300022: Box1814
+    4300024: Box1815
+    4300026: Box1816
+    4300028: Box1817
+    4300030: Box1818
+    4300032: Box1819
+    4300034: Box1820
+    4300036: BuildingMedium2Collider
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

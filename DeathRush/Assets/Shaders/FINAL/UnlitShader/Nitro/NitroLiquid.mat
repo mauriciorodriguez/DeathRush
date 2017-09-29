@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: NitroLiquid
+  m_Shader: {fileID: 4800000, guid: fec85d57461fd7f47963a9471ab3fdc5, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 867921500b57e574d9010526c03498d6, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_1540
+        second:
+          m_Texture: {fileID: 2800000, guid: 867921500b57e574d9010526c03498d6, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_7395
+        second:
+          m_Texture: {fileID: 2800000, guid: 867921500b57e574d9010526c03498d6, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 867921500b57e574d9010526c03498d6, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Cutoff
+        second: 0.5
+      data:
+        first:
+          name: _Alpha
+        second: 2.3
+      data:
+        first:
+          name: _node_6190
+        second: 41.92
+      data:
+        first:
+          name: _Brightness
+        second: 6.4
+      data:
+        first:
+          name: _node_8401
+        second: 0.6495727
+      data:
+        first:
+          name: _Oppacity
+        second: 1
+      data:
+        first:
+          name: _ReduceLiquid
+        second: 1
+      data:
+        first:
+          name: _Opacity
+        second: 1
+      data:
+        first:
+          name: _node_1456
+        second: 0
+      data:
+        first:
+          name: _node_4563
+        second: 0
+      data:
+        first:
+          name: _node_484
+        second: 0
+      data:
+        first:
+          name: _node_8898
+        second: 0
+      data:
+        first:
+          name: _SpeedX
+        second: 0
+      data:
+        first:
+          name: _SpeedY
+        second: 0
+      data:
+        first:
+          name: _node_3257
+        second: -0.5
+      data:
+        first:
+          name: _node_8280
+        second: 0
+      data:
+        first:
+          name: _TexSpeedX
+        second: 0
+      data:
+        first:
+          name: _TexSpeedY
+        second: -0.3
+      data:
+        first:
+          name: _TexDetailSpeedX
+        second: 0
+      data:
+        first:
+          name: _TexDetailSpeedY
+        second: -0.5
+      data:
+        first:
+          name: _MainTexSpeedX
+        second: -0.3
+      data:
+        first:
+          name: _MainTexSpeedY
+        second: 0
+      data:
+        first:
+          name: _DetailTexSpeedX
+        second: -0.5
+      data:
+        first:
+          name: _DetailTexSpeedY
+        second: 0
+      data:
+        first:
+          name: _node_9416
+        second: 0
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 0.07586191, g: 0, b: 1, a: 1}
+      data:
+        first:
+          name: _node_6856
+        second: {r: 0.20000005, g: 1, b: 0, a: 1}
+      data:
+        first:
+          name: _node_9026
+        second: {r: 1, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _node_4726
+        second: {r: 0, g: 0.13103431, b: 1, a: 1}

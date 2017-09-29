@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde7a65cec1006c4cb4b62e5f8c6f4de, type: 3}
+  m_Name: PlayerTruck
+  m_EditorClassIdentifier: 
+  vehicleType: 2
+  vehicleName: Kendi
+  nitroPower: 50
+  nitroTimer: 3
+  rechargeNitro: 3
+  resetTime: 0.5
+  wheelDriveType: 2
+  handBrakeForce: 8000
+  brakeForce: 500
+  torque: 6600
+  topSpeed: 176
+  topReverseSpeed: 40
+  downForce: 200
+  stuckForceVehicle: 2000
+  minSteerAngle: 5
+  maxSteerAngle: 10
+  minSidewaysFriction: 6
+  maxSidewaysFriction: 6
+  stuckToTheFloor: 0

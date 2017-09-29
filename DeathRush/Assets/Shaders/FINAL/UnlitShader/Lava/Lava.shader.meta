@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: e11d2eb106fb49649b472e959cc52d3c
+timeCreated: 1481997574
+licenseType: Pro
+ShaderImporter:
+  defaultTextures:
+  - _DisplacementText: {fileID: 2800000, guid: 86daae264218d34468143d83c9ad3d3f, type: 3}
+  - _RampTexture: {fileID: 2800000, guid: 06863bdd270b3ba4395cbc7d95f5e8ac, type: 3}
+  - _Texture: {fileID: 2800000, guid: 46ece01e0ea912e40acb8056a50c65ae, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

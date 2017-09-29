@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: d3bddebf4a2a0f94c9f16b75be9741d3
+timeCreated: 1505575144
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Box1780
+    100002: Box1781
+    100004: Box1782
+    100006: Box1784
+    100008: Box1785
+    100010: Box1786
+    100012: Box1787
+    100014: Box1788
+    100016: Box1789
+    100018: Box1791
+    100020: Box1792
+    100022: Box1794
+    100024: Box1795
+    100026: Box1797
+    100028: Box1798
+    100030: Box1800
+    100032: Box1801
+    100034: Box1802
+    100036: Box1803
+    100038: Box1804
+    100040: //RootNode
+    100042: BuildingMedium1
+    100044: Stairs
+    100046: Wood board
+    100048: BuildingMedium1 1
+    100050: BuildingMedium1Collider
+    400000: Box1780
+    400002: Box1781
+    400004: Box1782
+    400006: Box1784
+    400008: Box1785
+    400010: Box1786
+    400012: Box1787
+    400014: Box1788
+    400016: Box1789
+    400018: Box1791
+    400020: Box1792
+    400022: Box1794
+    400024: Box1795
+    400026: Box1797
+    400028: Box1798
+    400030: Box1800
+    400032: Box1801
+    400034: Box1802
+    400036: Box1803
+    400038: Box1804
+    400040: //RootNode
+    400042: BuildingMedium1
+    400044: Stairs
+    400046: Wood board
+    400048: BuildingMedium1 1
+    400050: BuildingMedium1Collider
+    2300000: Box1780
+    2300002: Box1781
+    2300004: Box1782
+    2300006: Box1784
+    2300008: Box1785
+    2300010: Box1786
+    2300012: Box1787
+    2300014: Box1788
+    2300016: Box1789
+    2300018: Box1791
+    2300020: Box1792
+    2300022: Box1794
+    2300024: Box1795
+    2300026: Box1797
+    2300028: Box1798
+    2300030: Box1800
+    2300032: Box1801
+    2300034: Box1802
+    2300036: Box1803
+    2300038: Box1804
+    2300040: BuildingMedium1
+    2300042: Stairs
+    2300044: BuildingMedium1 1
+    2300046: BuildingMedium1Collider
+    3300000: Box1780
+    3300002: Box1781
+    3300004: Box1782
+    3300006: Box1784
+    3300008: Box1785
+    3300010: Box1786
+    3300012: Box1787
+    3300014: Box1788
+    3300016: Box1789
+    3300018: Box1791
+    3300020: Box1792
+    3300022: Box1794
+    3300024: Box1795
+    3300026: Box1797
+    3300028: Box1798
+    3300030: Box1800
+    3300032: Box1801
+    3300034: Box1802
+    3300036: Box1803
+    3300038: Box1804
+    3300040: BuildingMedium1
+    3300042: Stairs
+    3300044: BuildingMedium1 1
+    3300046: BuildingMedium1Collider
+    4300000: BuildingMedium1
+    4300002: Stairs
+    4300004: Box1789
+    4300006: Box1780
+    4300008: Box1781
+    4300010: Box1782
+    4300012: Box1784
+    4300014: Box1785
+    4300016: Box1786
+    4300018: Box1787
+    4300020: Box1788
+    4300022: Box1804
+    4300024: Box1791
+    4300026: Box1792
+    4300028: Box1794
+    4300030: Box1795
+    4300032: Box1797
+    4300034: Box1798
+    4300036: Box1800
+    4300038: Box1801
+    4300040: Box1802
+    4300042: Box1803
+    4300044: BuildingMedium1Collider
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
