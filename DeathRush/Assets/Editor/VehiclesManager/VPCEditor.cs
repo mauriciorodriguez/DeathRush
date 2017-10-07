@@ -89,11 +89,12 @@ public class VPCEditor : Editor
             _target.vehicleVars.vehicleType = (VehicleVars.Type)EditorGUILayout.EnumPopup("Vehicle Type", _target.vehicleVars.vehicleType);
             _target.name = EditorGUILayout.TextField("Name", _target.name);
             _target.vehicleVars.downForce = EditorGUILayout.FloatField("Down Force", _target.vehicleVars.downForce);
+            _target.vehicleVars.stuckForceVehicle = EditorGUILayout.FloatField("Stuck Force", _target.vehicleVars.stuckForceVehicle);
+            _target.vehicleVars.stuckToTheFloor = EditorGUILayout.Toggle("Stuck To The Floor", _target.vehicleVars.stuckToTheFloor);
             _target.centerOfMass = EditorGUILayout.Vector3Field("Center Of Mass", _target.centerOfMass);
             _target.vehicleVars.resetTime = EditorGUILayout.FloatField("Reset Time", _target.vehicleVars.resetTime);
             EditorGUILayout.PropertyField(serializedObject.FindProperty("backDust"), true);
             EditorGUILayout.PropertyField(serializedObject.FindProperty("debugInput"), true);
-            _target.vehicleVars.stuckToTheFloor = EditorGUILayout.Toggle("Stuck To The Floor", _target.vehicleVars.stuckToTheFloor);
         }
 
         if (wheelSettings)

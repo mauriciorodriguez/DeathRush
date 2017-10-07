@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: IATruck
   m_EditorClassIdentifier: 
   vehicleType: 2
-  vehicleName: Yuri
+  vehicleName: Caleb
   nitroPower: 20000
   nitroTimer: 1.5
   rechargeNitro: 1.5
@@ -20,10 +20,10 @@ MonoBehaviour:
   wheelDriveType: 2
   handBrakeForce: 6000
   brakeForce: 500
-  torque: 6680
-  topSpeed: 840
+  torque: 6480
+  topSpeed: 640
   topReverseSpeed: 40
-  downForce: 100
+  downForce: 40
   stuckForceVehicle: 2000
   minSteerAngle: 20
   maxSteerAngle: 20

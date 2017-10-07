@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: BuildingMedium4
-  m_Shader: {fileID: 4800000, guid: e4d7eaf3475b0414194dfe91fbc11eaf, type: 3}
+  m_Shader: {fileID: 4800000, guid: 5102ab8788be6b64bb6c89e5bce319e5, type: 3}
   m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -87,7 +87,7 @@ Material:
       second: 0.5
     - first:
         name: _Glossiness
-      second: 0.5
+      second: 0
     - first:
         name: _GlossyReflections
       second: 1
@@ -114,6 +114,9 @@ Material:
       second: 1
     - first:
         name: _UVSec
+      second: 0
+    - first:
+        name: _UseMetallicMap
       second: 0
     - first:
         name: _ZWrite

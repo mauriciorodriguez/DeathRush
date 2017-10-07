@@ -436,7 +436,8 @@ public abstract class Vehicle : MonoBehaviour
             for (int i = 0; i < 4; i++) _rb.AddForceAtPosition(-wheelColliderList[i].transform.up * vehicleVars.stuckForceVehicle * _rb.velocity.magnitude, wheelColliderList[i].transform.position);
         }
         //Gravedad
-        else _rb.AddForce(-Vector3.up * vehicleVars.downForce * _rb.velocity.magnitude);
+        else if (!isGrounded) _rb.AddForce((-Vector3.up * vehicleVars.downForce), ForceMode.Acceleration);
+
     }
 
     /// <summary>

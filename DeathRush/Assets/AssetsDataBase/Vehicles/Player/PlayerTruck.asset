@@ -23,7 +23,7 @@ MonoBehaviour:
   torque: 6600
   topSpeed: 176
   topReverseSpeed: 40
-  downForce: 200
+  downForce: 40
   stuckForceVehicle: 2000
   minSteerAngle: 5
   maxSteerAngle: 10

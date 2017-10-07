@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Name: PlayerBuggy
   m_EditorClassIdentifier: 
   vehicleType: 0
-  vehicleName: Jabari
+  vehicleName: Uma
   nitroPower: 50
-  nitroTimer: 3
+  nitroTimer: 2.7075
   rechargeNitro: 3
   resetTime: 0.5
   wheelDriveType: 0
   handBrakeForce: 6000
   brakeForce: 500
-  torque: 3300
-  topSpeed: 180
+  torque: 3630
+  topSpeed: 178.695
   topReverseSpeed: 50
-  downForce: 100
+  downForce: 40
   stuckForceVehicle: 700
   minSteerAngle: 5
   maxSteerAngle: 15

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: IABuggy
   m_EditorClassIdentifier: 
   vehicleType: 0
-  vehicleName: Hannah
+  vehicleName: Cho
   nitroPower: 10000
   nitroTimer: 1.5
   rechargeNitro: 1.5
@@ -20,10 +20,10 @@ MonoBehaviour:
   wheelDriveType: 0
   handBrakeForce: 6000
   brakeForce: 500
-  torque: 3300
-  topSpeed: 630
+  torque: 2700
+  topSpeed: 30
   topReverseSpeed: 50
-  downForce: 100
+  downForce: 40
   stuckForceVehicle: 700
   minSteerAngle: 5
   maxSteerAngle: 15
