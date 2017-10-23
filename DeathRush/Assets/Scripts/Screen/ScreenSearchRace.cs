@@ -19,6 +19,7 @@ public class ScreenSearchRace : ScreenView
 
     private void OnEnable()
     {
+        cameraMenu.setMount(cameraMenu.searchRaceMount);
         _playerData = PlayerData.instance;
         loading.SetActive(false);
         EnableTracks();
@@ -35,7 +36,7 @@ public class ScreenSearchRace : ScreenView
 
     public void OnSearchForRaceButton(int track)
     {
-        _totalPilots = _playerData.racerList.Count;        
+        _totalPilots = _playerData.racerList.Count;
         if (_totalPilots > 0 && _playerData.selectedRacer != -1)
         {
             PersistendData.instance.ReleaseAllInfo();

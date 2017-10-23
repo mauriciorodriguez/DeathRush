@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.16788375, g: 0.21073635, b: 0.28994125, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -382,7 +382,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100444, guid: 48f3031c0467941448674ec1e131bbe0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100998, guid: 48f3031c0467941448674ec1e131bbe0, type: 3}
       propertyPath: m_IsActive
@@ -1045,107 +1045,6 @@ Prefab:
     - target: {fileID: 407626, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 403252, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 36
-      objectReference: {fileID: 0}
-    - target: {fileID: 403252, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -239.00183
-      objectReference: {fileID: 0}
-    - target: {fileID: 403252, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.000045776367
-      objectReference: {fileID: 0}
-    - target: {fileID: 143686, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 415890, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 415890, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 415890, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 415890, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 37
-      objectReference: {fileID: 0}
-    - target: {fileID: 415890, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -239
-      objectReference: {fileID: 0}
-    - target: {fileID: 464668, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 403252, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 403252, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 403252, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 403098, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.000030517578
-      objectReference: {fileID: 0}
-    - target: {fileID: 403098, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 403098, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 403098, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 464668, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 464668, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 464668, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -239.00183
-      objectReference: {fileID: 0}
-    - target: {fileID: 464668, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 43
-      objectReference: {fileID: 0}
-    - target: {fileID: 403098, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -239.00183
-      objectReference: {fileID: 0}
-    - target: {fileID: 21290354, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 3956f995d6bc388419ef273035b88579,
-        type: 3}
-    - target: {fileID: 117376, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 188070, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}

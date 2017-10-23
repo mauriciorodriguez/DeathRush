@@ -14,6 +14,7 @@ public class ScreenChaosMap : ScreenView
     void OnEnable()
     {
         SetData();
+        cameraMenu.setMount(cameraMenu.chaosMapMount);
     }
 
     public void SetData()

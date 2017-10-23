@@ -22,6 +22,7 @@ public class ScreenHirePilot : ScreenView
 
     private void OnEnable()
     {
+        cameraMenu.setMount(cameraMenu.hirePilotMount);
         if (!_playerData) _playerData = PlayerData.instance;
         _hireButtons = new List<ButtonHireRacer>();
         _hireButtons.AddRange(GetComponentsInChildren<ButtonHireRacer>(true));
@@ -48,7 +49,7 @@ public class ScreenHirePilot : ScreenView
                 btn.racerClass.text = btn.portrait.racerClass.ToString();
                 btn.cost.text = "$" + btn.portrait.cost;
 
-                if(btn.portrait.racerVehicle==VehicleVars.Type.Buggy)
+                if (btn.portrait.racerVehicle == VehicleVars.Type.Buggy)
                 {
                     btn.vehicleIcon.sprite = buggyIcon;
                 }

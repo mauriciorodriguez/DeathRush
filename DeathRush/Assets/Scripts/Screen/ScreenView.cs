@@ -8,6 +8,7 @@ public class ScreenView : MonoBehaviour
 
     public Tooltip tooltip;
     public Portrait RacerPortrait;
+    public CameraMenu cameraMenu;
 
     protected virtual void Update()
     {

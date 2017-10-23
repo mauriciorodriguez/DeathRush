@@ -11,6 +11,7 @@ public class ScreenUpgrades : ScreenView
 
     private void OnEnable()
     {
+        cameraMenu.setMount(cameraMenu.upgradesMount);
         _playerData = PlayerData.instance;
         ShowUpgrades();
     }

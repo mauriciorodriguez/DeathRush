@@ -16,6 +16,7 @@ public class ScreenGarage : ScreenView
 
     private void OnEnable()
     {
+        cameraMenu.setMount(cameraMenu.garageMount);
         _playerData = PlayerData.instance;
         ExhibitVehicle();
         _vehiclesToShowPosition = _vehiclesToShow.IndexOf(_playerData.racerList[_playerData.selectedRacer].racerVehicleType);

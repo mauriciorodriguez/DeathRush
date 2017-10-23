@@ -18,6 +18,7 @@ public class ScreenHUB : ScreenView
 
     private void OnEnable()
     {
+        cameraMenu.setMount(cameraMenu.hubMount);
         _playerData = PlayerData.instance;
         InitButtons();
         ShowSelectedInfo();
