@@ -390,7 +390,7 @@ public abstract class Vehicle : MonoBehaviour
     }
     private void CheckDustVehicle()
     {
-        if (SceneManager.GetActiveScene().buildIndex == (int)SCENES_NUMBER.DesertTrack)
+        if (SceneManager.GetActiveScene().buildIndex == (int)SCENES_NUMBER.DesertTrack && !hasEnded)
         {
             if (_localCurrentSpeed > 10 && isGrounded || _localCurrentSpeed < -5 && isGrounded) backDust.Play();
             else backDust.Stop();

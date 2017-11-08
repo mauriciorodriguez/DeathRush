@@ -35,7 +35,7 @@ public class Burner : Weapon
                 flames.SetActive(true);
                 ammoInput();
             }
-            if (Input.GetMouseButtonUp(shootButtom) || visualAmmo.fillAmount == 0)
+            if (Input.GetMouseButtonDown(shootButtom) || visualAmmo.fillAmount == 0)
             {
                 activeFeed = false;
                 flames.SetActive(false);

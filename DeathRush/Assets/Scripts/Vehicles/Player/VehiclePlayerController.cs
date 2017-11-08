@@ -113,7 +113,7 @@ public class VehiclePlayerController : Vehicle
         CheckBars();
         CheckDirection();
         CheckShakeCamera();
-        if (Input.GetKeyUp(KeyCode.R) && _canForceRespawn) ResetCar();
+        if (Input.GetKeyDown(KeyCode.R) && _canForceRespawn) ResetCar();
 
         //PRUEBA
         if (Input.GetKeyUp(KeyCode.F1))
@@ -288,6 +288,12 @@ public class VehiclePlayerController : Vehicle
     }
     public void EndRaceHandbrake()
     {
+        for (int i = 0; i <= 3; i++)
+        {
+            wheelColliderList[i].brakeTorque = 2000;
+            wheelColliderList[i].motorTorque = 0;
+        }
+
         backDust.Stop();
     }
 }

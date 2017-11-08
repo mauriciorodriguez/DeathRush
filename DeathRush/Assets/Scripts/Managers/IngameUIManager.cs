@@ -77,7 +77,7 @@ public class IngameUIManager : Manager
         if (!_endRacerList.ContainsKey(v.uID))
         {
             v.OnRaceFinished -= VehicleRaceFinished;
-            v.GetComponentInChildren<Collider>().enabled = false;
+    //        v.GetComponentInChildren<Collider>().enabled = false;
             _endRacerList[v.uID] = v.vehicleVars.vehicleName;
         }
     }
@@ -88,10 +88,10 @@ public class IngameUIManager : Manager
     /// <param name="v">Vehiculo para deshabilitar</param>
     private void DisableVehicleScripts(Vehicle v)
     {
-        foreach (var col in GetComponentsInChildren<Collider>())
+      /*  foreach (var col in GetComponentsInChildren<Collider>())
         {
             col.enabled = false;
-        }
+        }*/
         v.GetComponent<InputController>().enabled = false;
         //v.GetComponent<VehicleData>().enabled = false;
         //v.GetComponent<Vehicle>().enabled = false;

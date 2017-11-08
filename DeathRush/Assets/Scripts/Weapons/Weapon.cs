@@ -237,7 +237,7 @@ public class Weapon : MonoBehaviour
                 if (!canShoot)
                     _timeCoolDown += Time.deltaTime;
 
-                if (Input.GetMouseButtonUp(shootButtom) && _timeCoolDown > cooldown && !canShoot && !ammoEmpty)
+                if (Input.GetMouseButtonDown(shootButtom) && _timeCoolDown > cooldown && !canShoot && !ammoEmpty)
                 {
                     _timeCoolDown = 0;
                     canShoot = true;

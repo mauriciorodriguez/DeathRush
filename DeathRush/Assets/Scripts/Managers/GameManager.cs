@@ -159,11 +159,15 @@ public class GameManager : Manager
                 if (SceneManager.GetActiveScene().buildIndex == (int)SCENES_NUMBER.InsideTheCore)
                 {
                     var goController = go.GetComponent<VehicleIAController>();
-                    if (goController.vehicleVars.vehicleType == VehicleVars.Type.Buggy) goController.vehicleVars.downForce = 100;
-                    if (goController.vehicleVars.vehicleType == VehicleVars.Type.Bigfoot) goController.vehicleVars.downForce = 100;
-                    if (goController.vehicleVars.vehicleType == VehicleVars.Type.Alien) goController.vehicleVars.downForce = 100;
+                    if (goController.vehicleVars.vehicleType == VehicleVars.Type.Buggy) goController.vehicleVars.downForce = 30;
+                    if (goController.vehicleVars.vehicleType == VehicleVars.Type.Bigfoot) goController.vehicleVars.downForce = 20;
+                    if (goController.vehicleVars.vehicleType == VehicleVars.Type.Truck) goController.vehicleVars.downForce = 20;
+                    if (goController.vehicleVars.vehicleType == VehicleVars.Type.Alien) goController.vehicleVars.downForce = 30;
 
-                    playerReference.vehicleVars.downForce = 100;
+                    if (playerReference.vehicleVars.vehicleType == VehicleVars.Type.Buggy) playerReference.vehicleVars.downForce = 30;
+                    if (playerReference.vehicleVars.vehicleType == VehicleVars.Type.Bigfoot) playerReference.vehicleVars.downForce = 20;
+                    if (playerReference.vehicleVars.vehicleType == VehicleVars.Type.Truck) playerReference.vehicleVars.downForce = 20;
+                    if (playerReference.vehicleVars.vehicleType == VehicleVars.Type.Alien) playerReference.vehicleVars.downForce = 30;
 
                     goController.vehicleVars.stuckToTheFloor = false;
                 }
@@ -241,6 +245,7 @@ public class GameManager : Manager
                     _posiblePosition++;
                     enemy.RaceFinished();
                     enemy.enabled = false;
+                    enemy.backDust.Stop();
                 }
             }
             if (_enemiesReferences.Count == 0)
@@ -457,9 +462,10 @@ public class GameManager : Manager
 
         _ingameUIManagerReference.lapsText.gameObject.SetActive(false);
         playerReference.GetComponent<VehiclePlayerController>().wrongDirectionText.gameObject.SetActive(false);
-        playerReference.GetComponent<VehiclePlayerController>().visualNitro.transform.parent.transform.parent.transform.parent.gameObject.SetActive(false);
+     //   playerReference.GetComponent<VehiclePlayerController>().visualNitro.transform.parent.transform.parent.transform.parent.gameObject.SetActive(false);
         playerReference.GetComponentInChildren<WeaponsManager>().crosshair.SetActive(false);
         _ingameUIManagerReference.speedpmeterNeedleImage.gameObject.SetActive(false);
+
     }
 
     void SaveDamageInfo()

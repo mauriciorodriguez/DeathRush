@@ -182,7 +182,7 @@ public class K
     public const float MINIMAP_HEIGHT = 50;
 
     // ===== GAME PRESETS =====
-    public const int MAX_LAPS = 3;
+    public const int MAX_LAPS = 1;
     public const int MAX_RACERS = 5;
 
     // ===== SCENE CONTAINERS =====
@@ -257,7 +257,7 @@ public enum SCENES_NUMBER : int
     ScenesMenu = 0,
     PilotCreation = 1,
     HUB = 2,
-    DesertTrack = 3,
+    DesertTrack = 11,
     PostGame = 4,
     LoadingScene = 5,
     Garage = 6,
@@ -265,6 +265,6 @@ public enum SCENES_NUMBER : int
     NewGame = 8,
     WaterTomb = 9,
     Satellitrack = 10,
-    InsideTheCore = 11
+    InsideTheCore = 3
 }
 
