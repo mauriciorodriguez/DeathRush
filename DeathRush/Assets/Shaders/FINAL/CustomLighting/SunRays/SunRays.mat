@@ -15,31 +15,26 @@ Material:
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
-      data:
-        first:
-          name: _Texture
-        second:
-          m_Texture: {fileID: 2800000, guid: 8bcafb0964c4152458137b442be0d8a5, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _node_6640
-        second:
-          m_Texture: {fileID: 2800000, guid: 8bcafb0964c4152458137b442be0d8a5, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Texture
+      second:
+        m_Texture: {fileID: 2800000, guid: 8bcafb0964c4152458137b442be0d8a5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _node_6640
+      second:
+        m_Texture: {fileID: 2800000, guid: 8bcafb0964c4152458137b442be0d8a5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
-      data:
-        first:
-          name: _Multiplier
-        second: 0.4
+    - first:
+        name: _Multiplier
+      second: 0.09
     m_Colors:
-      data:
-        first:
-          name: _Color
-        second: {r: 0.6103553, g: 0.6323529, b: 0.40451986, a: 1}
-      data:
-        first:
-          name: _node_5396
-        second: {r: 0.9723125, g: 1, b: 0.71323526, a: 1}
+    - first:
+        name: _Color
+      second: {r: 0.9822516, g: 1, b: 0.8161765, a: 1}
+    - first:
+        name: _node_5396
+      second: {r: 0.9723125, g: 1, b: 0.71323526, a: 1}
