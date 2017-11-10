@@ -18,6 +18,7 @@ public class ScreenNewGame : ScreenView
 
     private void OnEnable()
     {
+        cameraMenu.setMount(cameraMenu.mainMenuMount);
         if (PlayerPrefs.GetString(K.PREFS_PLAYER_COUNTRY) != "") _canContinue = true;
         else _canContinue = false;
         continueButton.SetActive(_canContinue);
