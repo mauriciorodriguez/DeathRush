@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 8a2b84f0c4244b441bcacd263e99aafa
+timeCreated: 1510441188
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: we are potatoes
+  fontNames:
+  - we are potatoes
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ac9bbc433e000b548955b24f3682485c
+timeCreated: 1510441189
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SoulMission
+  fontNames:
+  - SoulMission
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

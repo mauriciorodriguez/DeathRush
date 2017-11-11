@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 2321a2c7f156d6848be3c53a8a9a2989
+timeCreated: 1510441186
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: I Love Disaster
+  fontNames:
+  - I Love Disaster
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 6813bd13028272a469ed43d6dc6e92bf
+timeCreated: 1510441188
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Odd Press
+  fontNames:
+  - Odd Press
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

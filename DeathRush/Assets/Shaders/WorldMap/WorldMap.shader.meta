@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: a2063310169ab6e46b91ec77f73336b4
+timeCreated: 1510439120
+licenseType: Pro
+ShaderImporter:
+  defaultTextures:
+  - _GlobeTexture: {fileID: 2800000, guid: baa3287c02471534aa5c52ac93a15b44, type: 3}
+  - _EdgeTexture: {fileID: 2800000, guid: baa3287c02471534aa5c52ac93a15b44, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

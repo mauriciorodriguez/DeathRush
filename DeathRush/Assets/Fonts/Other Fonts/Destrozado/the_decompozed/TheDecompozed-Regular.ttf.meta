@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 9383d0b0f07ae2b4689f971dd3d88cff
+timeCreated: 1510441188
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: The Decompozed
+  fontNames:
+  - The Decompozed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8137347aca911264bb5647dbf52b2b27, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

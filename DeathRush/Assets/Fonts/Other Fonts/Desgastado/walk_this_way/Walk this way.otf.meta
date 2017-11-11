@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 52941b1eed0092f4cb57334cdda74e93
+timeCreated: 1510441187
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Walk this way
+  fontNames:
+  - Walk this way
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 21af4fdedeacdb840b874f50db1e647d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

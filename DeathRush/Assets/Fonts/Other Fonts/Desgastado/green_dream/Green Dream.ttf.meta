@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: e2e77619526d0f347926c7782d6dc264
+timeCreated: 1510441190
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Green Dream
+  fontNames:
+  - Green Dream
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

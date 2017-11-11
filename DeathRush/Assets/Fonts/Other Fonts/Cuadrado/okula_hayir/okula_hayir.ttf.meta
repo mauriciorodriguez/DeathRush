@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 005fe7238c34bcc45ba8b0a10249a584
+timeCreated: 1510441185
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: OKULA HAYIR
+  fontNames:
+  - OKULA HAYIR
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: e7d6e64019c258b438a52af10c832231
+timeCreated: 1510441190
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: CF Xerography Demo
+  fontNames:
+  - CF Xerography Demo
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

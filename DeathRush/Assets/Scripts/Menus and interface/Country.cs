@@ -129,9 +129,11 @@ public class Country : MonoBehaviour
     public int chaosLevel;
     public NamesType countryNameEnum;
     public ScreenCountrySelect screenCountrySelect;
-
+    private Material _mat;
     private void Awake()
     {
+        _mat = GetComponent<Renderer>().sharedMaterial;
+
         if (flagSprite == null)
         {
             flagSprite = new Dictionary<NamesType, Sprite>()
@@ -243,6 +245,15 @@ public class Country : MonoBehaviour
         }
     }
 
+    void OnMouseEnter()
+    {
+        _mat.SetFloat("_EdgeWidth", 1);
+    }
+
+    private void OnMouseExit()
+    {
+        if (screenCountrySelect.countryEnum != countryNameEnum) _mat.SetFloat("_EdgeWidth", 0);
+    }
     void OnMouseDown()
     {
         if (screenCountrySelect != null)

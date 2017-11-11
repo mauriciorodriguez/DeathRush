@@ -177,8 +177,14 @@ Material:
         name: _node_2653
       second: {r: 1, g: 1, b: 1, a: 1}
     - first:
+        name: _node_3785
+      second: {r: 1, g: 0, b: 0, a: 1}
+    - first:
         name: _node_5008
       second: {r: 0, g: 1, b: 1, a: 1}
     - first:
         name: _node_5730
       second: {r: 1, g: 0.39310348, b: 0, a: 1}
+    - first:
+        name: _node_637
+      second: {r: 1, g: 1, b: 1, a: 1}

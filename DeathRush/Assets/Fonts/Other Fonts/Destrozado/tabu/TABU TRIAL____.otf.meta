@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 8541b8049d9728345b2003356ea8a854
+timeCreated: 1510441188
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: TABU
+  fontNames:
+  - TABU
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

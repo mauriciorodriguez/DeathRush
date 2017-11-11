@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 3d9b137ece5855e47b080c07fa4e3e8e
+timeCreated: 1510441186
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: AnthologY
+  fontNames:
+  - AnthologY
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

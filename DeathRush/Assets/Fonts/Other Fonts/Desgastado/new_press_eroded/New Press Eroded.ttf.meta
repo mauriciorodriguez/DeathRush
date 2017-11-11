@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b55dd402ef477d64c9c13f58d37ee6de
+timeCreated: 1510441189
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: New Press Eroded
+  fontNames:
+  - New Press Eroded
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

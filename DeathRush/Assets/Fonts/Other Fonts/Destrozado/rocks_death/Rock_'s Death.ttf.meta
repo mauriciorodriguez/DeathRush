@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 23aa4c1280968f54291a35b11b8f7767
+timeCreated: 1510441186
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Rock's Death
+  fontNames:
+  - Rock's Death
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: ba813403d417a6c4c9d80f47c362c55f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

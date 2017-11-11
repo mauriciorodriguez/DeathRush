@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: aca273aee66c36340b47aed6b240265e
+timeCreated: 1510441189
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: No R3verence
+  fontNames:
+  - No R3verence
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

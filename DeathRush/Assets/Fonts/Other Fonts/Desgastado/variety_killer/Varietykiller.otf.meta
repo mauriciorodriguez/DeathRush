@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 61aab38c51725a143990837b4e8d0069
+timeCreated: 1510441187
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Varietykiller
+  fontNames:
+  - Varietykiller
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 36c7a89bb82f3f048a4afa414a4943a1, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

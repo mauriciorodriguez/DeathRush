@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 289ad40dfa0f25a4ba514ddc50b67bd2
+timeCreated: 1510441186
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Spy Agency Gradient Italic
+  fontNames:
+  - Spy Agency Gradient Italic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

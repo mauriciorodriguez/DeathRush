@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 43847d221269c3d48858cd6cc4815a13
+timeCreated: 1510441187
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Spy Agency Laser
+  fontNames:
+  - Spy Agency Laser
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

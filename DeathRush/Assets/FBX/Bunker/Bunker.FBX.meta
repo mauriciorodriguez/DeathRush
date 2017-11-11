@@ -566,6 +566,12 @@ ModelImporter:
     101116: Tube6
     101118: Vents1
     101120: Vents2
+    101122: BigMonitor004
+    101124: Box447
+    101126: Box448
+    101128: Box449
+    101130: ChamferBox023
+    101132: GUI
     400000: BigMonitor
     400002: BigMonitor003
     400004: BigMonitor2
@@ -1127,6 +1133,12 @@ ModelImporter:
     401116: Tube6
     401118: Vents1
     401120: Vents2
+    401122: BigMonitor004
+    401124: Box447
+    401126: Box448
+    401128: Box449
+    401130: ChamferBox023
+    401132: GUI
     2300000: Box001
     2300002: Box002
     2300004: Box022
@@ -1615,6 +1627,11 @@ ModelImporter:
     2300970: Tube6
     2300972: Vents1
     2300974: Vents2
+    2300976: Box447
+    2300978: Box448
+    2300980: Box449
+    2300982: ChamferBox023
+    2300984: GUI
     3300000: Box001
     3300002: Box002
     3300004: Box022
@@ -2103,6 +2120,11 @@ ModelImporter:
     3300970: Tube6
     3300972: Vents1
     3300974: Vents2
+    3300976: Box447
+    3300978: Box448
+    3300980: Box449
+    3300982: ChamferBox023
+    3300984: GUI
     4300000: Ceiling
     4300002: Cylinder127
     4300004: Cylinder118
@@ -2589,6 +2611,11 @@ ModelImporter:
     4300966: Tube2
     4300968: Vents1
     4300970: Tube3
+    4300972: Box447
+    4300974: Box448
+    4300976: Box449
+    4300978: ChamferBox023
+    4300980: GUI
   materials:
     importMaterials: 1
     materialName: 1

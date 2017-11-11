@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a0e28ab94e20e4c4fa032bff9343344a
+timeCreated: 1510441188
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Living Hell
+  fontNames:
+  - Living Hell
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

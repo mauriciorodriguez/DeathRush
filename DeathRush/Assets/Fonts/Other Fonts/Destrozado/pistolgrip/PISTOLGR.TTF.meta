@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 88d6673dc51a2b449aa0aae23b1101ad
+timeCreated: 1510441188
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Pistolgrip
+  fontNames:
+  - Pistolgrip
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0e44bde5a19d4d64292037a4d62bc47d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

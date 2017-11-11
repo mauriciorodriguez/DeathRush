@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: cbef768c049de594aa132079e23280a6
+timeCreated: 1510441190
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: TOSCA ZERO
+  fontNames:
+  - TOSCA ZERO
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

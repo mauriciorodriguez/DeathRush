@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a69d84d4ea679c4408468cbcf0d58d70
+timeCreated: 1510441189
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Truskey
+  fontNames:
+  - Truskey
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 271bc46a35a075b47a7d6446ae4a87d1, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

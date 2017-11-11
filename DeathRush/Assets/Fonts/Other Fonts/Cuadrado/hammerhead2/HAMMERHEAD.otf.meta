@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: d6a72e8ed3f38294c99768e676611c9b
+timeCreated: 1510441190
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: hammerhead
+  fontNames:
+  - hammerhead
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2aa2345fe2006504db341b35082ecee7, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

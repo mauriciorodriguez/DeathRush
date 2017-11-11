@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ff7ce8ca2f8f9364db446d5a80b81a09
+timeCreated: 1510441190
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: C.A. Gatintas
+  fontNames:
+  - C.A. Gatintas
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

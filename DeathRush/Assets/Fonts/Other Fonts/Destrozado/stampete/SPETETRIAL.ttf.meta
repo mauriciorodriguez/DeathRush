@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 5cdc4fb4953e67b40b38b35b644dc94a
+timeCreated: 1510441187
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: stamPete
+  fontNames:
+  - stamPete
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 14392f7bd6024e640876a203c2d4c0e4, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

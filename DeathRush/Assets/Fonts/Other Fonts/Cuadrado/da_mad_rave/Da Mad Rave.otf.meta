@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: c4791bf333d60ce40bd7f8e433468abb
+timeCreated: 1510441189
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Da Mad Rave
+  fontNames:
+  - Da Mad Rave
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 6c93e542cb127ac48aa458b7100e8d1a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

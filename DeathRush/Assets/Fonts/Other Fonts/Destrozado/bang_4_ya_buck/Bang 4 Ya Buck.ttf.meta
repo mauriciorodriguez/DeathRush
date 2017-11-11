@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 283e90c898b371741bd56ab74a3dd9de
+timeCreated: 1510441186
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Bang 4 Ya Buck
+  fontNames:
+  - Bang 4 Ya Buck
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
