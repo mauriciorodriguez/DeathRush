@@ -6,11 +6,9 @@ using System;
 
 public class ScreenHirePilot : ScreenView
 {
-    public ButtonHireRacer racerOne, racerTwo, racerThree, racerFour;
     public RacerDetailedInfoForHire racerDetailedInfo;
-
+    private ButtonHireRacer _pilotHired;
     private PlayerData _playerData;
-    private ButtonHireRacer _selectedRacer;
     private List<ButtonHireRacer> _hireButtons;
 
 
@@ -26,8 +24,7 @@ public class ScreenHirePilot : ScreenView
         if (!_playerData) _playerData = PlayerData.instance;
         _hireButtons = new List<ButtonHireRacer>();
         _hireButtons.AddRange(GetComponentsInChildren<ButtonHireRacer>(true));
-        _selectedRacer = null;
-        ShowDetailedInfo();
+        _pilotHired = null;
         InitRacers();
     }
 
@@ -47,7 +44,7 @@ public class ScreenHirePilot : ScreenView
                 GameObject.FindGameObjectWithTag(K.TAG_PORTRAIT_BUILDER).GetComponent<PortraitBuilder>().Randomize(btn.portrait);
                 btn.racerName.text = btn.portrait.racerName;
                 btn.racerClass.text = btn.portrait.racerClass.ToString();
-                btn.cost.text = "$" + btn.portrait.cost;
+                btn.racerCost.text = "$" + btn.portrait.cost;
 
                 if (btn.portrait.racerVehicle == VehicleVars.Type.Buggy)
                 {
@@ -72,6 +69,7 @@ public class ScreenHirePilot : ScreenView
                 RacerData rd = new RacerData(data.racerName, data.gender, data.racerVehicle, data.racerClass, data.headNumber, data.hairNumber, data.extraNumber, data.hairColorNumber, data.skinColorNumber, data.maxLife, data.cost);
                 rd.positionInHire = posInHire++;
                 _playerData.racersForHire.Add(rd);
+
             }
         }
         else
@@ -84,42 +82,18 @@ public class ScreenHirePilot : ScreenView
                 _hireButtons[posInHire].portrait.Build(_playerData.racersForHire[i]);
                 _hireButtons[posInHire].racerName.text = _playerData.racersForHire[i].racerName;
                 _hireButtons[posInHire].racerClass.text = _playerData.racersForHire[i].racerClass.ToString();
-                _hireButtons[posInHire].cost.text = "$" + _playerData.racersForHire[i].cost;
+                _hireButtons[posInHire].racerCost.text = "$" + _playerData.racersForHire[i].cost;
             }
         }
     }
 
-    public void OnShowRacerInfo1()
+    public void OnHireRacer(ButtonHireRacer pilotHired)
     {
-        _selectedRacer = racerOne;
-        ShowDetailedInfo();
-    }
-
-    public void OnShowRacerInfo2()
-    {
-        _selectedRacer = racerTwo;
-        ShowDetailedInfo();
-    }
-
-    public void OnShowRacerInfo3()
-    {
-        _selectedRacer = racerThree;
-        ShowDetailedInfo();
-    }
-
-    public void OnShowRacerInfo4()
-    {
-        _selectedRacer = racerFour;
-        ShowDetailedInfo();
-    }
-
-    public void OnHireRacer()
-    {
-        int cost = int.Parse(_selectedRacer.cost.text.Remove(0, 1));
+        _pilotHired = pilotHired;
+        int cost = int.Parse(_pilotHired.racerCost.text.Remove(0, 1));
         if (cost <= _playerData.resources)
         {
-            racerDetailedInfo.gameObject.SetActive(false);
-            HandleHiredRacer(_selectedRacer);
+            HandleHiredRacer(_pilotHired);
             _playerData.selectedRacer = _playerData.racerList.Count - 1;
             _playerData.resources -= cost;
             _playerData.hiredRacers++;
@@ -132,23 +106,7 @@ public class ScreenHirePilot : ScreenView
         var rd = new RacerData(racer.racerName, racer.gender, racer.racerVehicle, racer.racerClass, racer.headNumber, racer.hairNumber, racer.extraNumber, racer.hairColorNumber, racer.skinColorNumber, racer.maxLife);
         _playerData.AddRacer(rd);
         _playerData.racersForHire.RemoveAll(x => x.positionInHire == racer.positionInHire);
-        btn.gameObject.SetActive(false);
+        btn.transform.parent.gameObject.SetActive(false);
     }
 
-    private void ShowDetailedInfo()
-    {
-        if (_selectedRacer)
-        {
-            racerDetailedInfo.gameObject.SetActive(true);
-            var aux = racerDetailedInfo.transform.position;
-            aux.x = _selectedRacer.transform.position.x;
-            racerDetailedInfo.transform.position = aux;
-            var racerInfo = _selectedRacer.portrait;
-            racerDetailedInfo.racerName.text = racerInfo.racerName;
-            racerDetailedInfo.className.text = racerInfo.racerClass.ToString();
-            racerDetailedInfo.vehicleName.text = racerInfo.racerVehicle.ToString();
-            racerDetailedInfo.racerCost.text = "$" + racerInfo.cost;
-        }
-        else racerDetailedInfo.gameObject.SetActive(false);
-    }
 }

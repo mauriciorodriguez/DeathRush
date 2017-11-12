@@ -77,7 +77,7 @@ public class ScreenManagerNuevo : MonoBehaviour
 
         //Country Select
         screenCountrySelect.OnExit += () => GoToScreen(screenNewGame);
-        screenCountrySelect.OnCountrySelect += () => GoToScreen(screenHub);
+        screenCountrySelect.OnCountrySelect += () => GoToScreen(screenHirePilot);
 
         //Options
         screenOptions.OnExit += () => GoToScreen(screenNewGame);

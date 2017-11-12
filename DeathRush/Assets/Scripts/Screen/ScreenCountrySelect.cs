@@ -17,8 +17,8 @@ public class ScreenCountrySelect : ScreenView {
     {
         cameraMenu.setMount(cameraMenu.selectCountry);
         renderers = GetComponentsInChildren<Renderer>();
-        print(renderers.Length);
-        mats = new Material[7];
+
+        mats = new Material[8];
         for (int i = 0; i < renderers.Length; i++) if (renderers[i].sharedMaterial != null) mats[i] = renderers[i].sharedMaterial;
         foreach (var mat in mats)
         {

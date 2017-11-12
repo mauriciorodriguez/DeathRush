@@ -5,6 +5,6 @@ using UnityEngine.UI;
 public class ButtonHireRacer : MonoBehaviour
 {
     public Portrait portrait;
-    public Text racerName, racerClass, cost;
+    public Text racerName, racerClass, vehicleName, racerCost;
     public SpriteRenderer vehicleIcon;
 }
