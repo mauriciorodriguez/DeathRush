@@ -6,11 +6,11 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Selection
-  m_Shader: {fileID: 4800000, guid: 51bdd5538926f4d4ea08867ac51a650e, type: 3}
-  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION
+  m_Name: LineEarthGlobe
+  m_Shader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -46,25 +46,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
-        name: _Illum
-      second:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: cae07fd302b7f1740a1a7728f143d39e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 76a13e37ed62aaf4bb928820cf5fbf51, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MetallicGlossMap
-      second:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
-        name: _Normal
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -81,24 +69,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _Texture
-      second:
-        m_Texture: {fileID: 2800000, guid: cae07fd302b7f1740a1a7728f143d39e, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
-        name: _node_449
-      second:
-        m_Texture: {fileID: 2800000, guid: cae07fd302b7f1740a1a7728f143d39e, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
-        name: _node_8678
-      second:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
         name: _BumpScale
@@ -111,10 +81,7 @@ Material:
       second: 1
     - first:
         name: _DstBlend
-      second: 10
-    - first:
-        name: _Emission
-      second: 1
+      second: 0
     - first:
         name: _GlossMapScale
       second: 1
@@ -129,7 +96,7 @@ Material:
       second: 0
     - first:
         name: _Mode
-      second: 3
+      second: 0
     - first:
         name: _OcclusionStrength
       second: 1
@@ -150,20 +117,11 @@ Material:
       second: 0
     - first:
         name: _ZWrite
-      second: 0
-    - first:
-        name: _node_3096
-      second: 1
-    - first:
-        name: _node_34
       second: 1
     m_Colors:
     - first:
         name: _Color
-      second: {r: 0.9448277, g: 1, b: 0, a: 1}
+      second: {r: 1, g: 0.6, b: 0, a: 0.92156863}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
-    - first:
-        name: _node_8427
-      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}

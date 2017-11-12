@@ -6,10 +6,19 @@ ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Globe
+    100004: Selection
     400000: //RootNode
+    400002: Globe
+    400004: Selection
     2300000: //RootNode
+    2300002: Globe
+    2300004: Selection
     3300000: //RootNode
+    3300002: Globe
+    3300004: Selection
     4300000: Selection
+    4300002: Globe
   materials:
     importMaterials: 1
     materialName: 0

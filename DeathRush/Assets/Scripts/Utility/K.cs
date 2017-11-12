@@ -257,7 +257,7 @@ public enum SCENES_NUMBER : int
     ScenesMenu = 0,
     PilotCreation = 1,
     HUB = 2,
-    DesertTrack = 11,
+    DesertTrack = 3,
     PostGame = 4,
     LoadingScene = 5,
     Garage = 6,
@@ -265,6 +265,6 @@ public enum SCENES_NUMBER : int
     NewGame = 8,
     WaterTomb = 9,
     Satellitrack = 10,
-    InsideTheCore = 3
+    InsideTheCore = 11
 }
 
