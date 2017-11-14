@@ -19,7 +19,7 @@ public class ScreenManagerNuevo : MonoBehaviour
     public ScreenGameOver screenGameOver;
     public BottomMenu bottomMenu;
     public PlayerData playerData;
-
+    public GameObject cameraRotationCanvas;
     private ScreenView _currentScreen;
 
     private void Awake()
@@ -45,8 +45,13 @@ public class ScreenManagerNuevo : MonoBehaviour
             screen is ScreenGameOver)
         {
             bottomMenu.gameObject.SetActive(false);
+            cameraRotationCanvas.SetActive(false);
         }
-        else bottomMenu.gameObject.SetActive(true);
+        else
+        {
+            bottomMenu.gameObject.SetActive(true);
+            cameraRotationCanvas.SetActive(true);
+        }
         if (_currentScreen) _currentScreen.gameObject.SetActive(false);
         screen.gameObject.SetActive(true);
         _currentScreen = screen;
