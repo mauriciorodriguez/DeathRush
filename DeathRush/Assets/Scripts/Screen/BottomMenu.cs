@@ -13,6 +13,8 @@ public class BottomMenu : ScreenView
     public event Action OnShowGarage = delegate { };
     public event Action OnShowHireRacer = delegate { };
     public event Action OnShowSearchForRace = delegate { };
+    public event Action OnShowWeapons = delegate { };
+    public event Action OnShowVehiclesToBuy = delegate { };
     public event Action OnGameOver = delegate { };
 
     public Text textResources;
@@ -22,6 +24,8 @@ public class BottomMenu : ScreenView
     public int resourcesChaos, chaosResources;
     public ScreenChaosMap screenChaosMap;
     public List<Button> buttonList;
+
+    public List<GameObject> referencePoints;
 
     private PlayerData _playerData;
 
@@ -46,9 +50,12 @@ public class BottomMenu : ScreenView
                 btn.enabled = false;
                 btn.GetComponent<Image>().color = btn.colors.disabledColor;
             }
+
+            foreach (var refPoint in referencePoints) refPoint.GetComponent<SphereCollider>().enabled = false;
         }
         else
         {
+            foreach (var refPoint in referencePoints) refPoint.GetComponent<SphereCollider>().enabled = true;
             hireButton.GetComponent<Image>().color = Color.white;
             foreach (var btn in buttonList)
             {
@@ -98,23 +105,51 @@ public class BottomMenu : ScreenView
         textChaos.text = "Chaos: " + _playerData.countryChaos[_playerData.countryType] + "%";
     }
 
+    public void BTNShowWeapons(GameObject refPoint)
+    {
+        if (_playerData.selectedRacer != -1)
+        {
+            refPoint.SetActive(false);
+            cameraMenu.setMount(cameraMenu.weaponsMount);
+            CheckStatusReferencePoints(refPoint);
+        }
+    }
+    public void BTNVehiclesToBuy()
+    {
+        if (_playerData.selectedRacer != -1)
+        {
+            cameraMenu.setMount(cameraMenu.selectCountry);
+        }
+    }
     public void BTNShowUpgrade()
     {
-        OnShowUpgrade();
+        if (_playerData.selectedRacer != -1)
+        {
+            OnShowUpgrade();
+        }
     }
 
     public void BTNShowChaosMap()
     {
-        OnShowChaosMap();
+        if (_playerData.selectedRacer != -1)
+        {
+            OnShowChaosMap();
+        }
     }
 
-    public void BTNShowHUB()
+    public void BTNShowHUB(GameObject refPoint)
     {
-        OnShowHUB();
+        if (_playerData.selectedRacer != -1)
+        {
+            refPoint.SetActive(false);
+            OnShowHUB();
+            CheckStatusReferencePoints(refPoint);
+        }
     }
 
-    public void BTNShowGarage()
+    public void BTNShowGarage(GameObject refPoint)
     {
+        refPoint.SetActive(false);
         if (_playerData.selectedRacer != -1)
         {
             OnShowGarage();
@@ -124,16 +159,32 @@ public class BottomMenu : ScreenView
         {
             OnShowHireRacer();
         }
+        CheckStatusReferencePoints(refPoint);
     }
 
-    public void BTNShowHireRacer()
+    public void BTNShowHireRacer(GameObject refPoint)
     {
+        refPoint.SetActive(false);
         OnShowHireRacer();
+        CheckStatusReferencePoints(refPoint);
     }
 
-    public void BTNSearchForRace()
+    public void BTNSearchForRace(GameObject refPoint)
     {
-        if (_playerData.racerList.Count > 0) OnShowSearchForRace();
-        else OnShowHireRacer();
+        if (_playerData.selectedRacer != -1)
+        {
+            refPoint.SetActive(false);
+            if (_playerData.racerList.Count > 0) OnShowSearchForRace();
+            else OnShowHireRacer();
+            CheckStatusReferencePoints(refPoint);
+        }
+    }
+
+    private void CheckStatusReferencePoints(GameObject referencePoint)
+    {
+        foreach (var refPoint in referencePoints)
+        {
+            if (!refPoint.activeSelf && refPoint != referencePoint) refPoint.SetActive(true);
+        }
     }
 }

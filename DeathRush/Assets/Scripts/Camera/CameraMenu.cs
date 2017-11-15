@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraMenu : MonoBehaviour
 {
     public float speedTransition= .1f;
-    public Transform searchRaceMount, upgradesMount, chaosMapMount, hubMount, hirePilotMount, selectCountry, garageMount, racerInfoMount, mainMenuMount;
+    public Transform searchRaceMount, upgradesMount, chaosMapMount, hubMount, hirePilotMount, selectCountry, garageMount, racerInfoMount, mainMenuMount, weaponsMount;
     private Transform currentMount;
 
     public float speedRotation = 50f;
