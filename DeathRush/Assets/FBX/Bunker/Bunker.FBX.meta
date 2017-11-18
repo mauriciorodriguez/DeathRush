@@ -573,6 +573,9 @@ ModelImporter:
     101130: ChamferBox023
     101132: GUI
     101134: Garage001
+    101136: LockerLeft
+    101138: LockerRight
+    101140: Lockers
     400000: BigMonitor
     400002: BigMonitor003
     400004: BigMonitor2
@@ -1141,6 +1144,9 @@ ModelImporter:
     401130: ChamferBox023
     401132: GUI
     401134: Garage001
+    401136: LockerLeft
+    401138: LockerRight
+    401140: Lockers
     2300000: Box001
     2300002: Box002
     2300004: Box022
@@ -1635,6 +1641,7 @@ ModelImporter:
     2300982: ChamferBox023
     2300984: GUI
     2300986: Garage001
+    2300988: Locker1
     3300000: Box001
     3300002: Box002
     3300004: Box022
@@ -2129,6 +2136,7 @@ ModelImporter:
     3300982: ChamferBox023
     3300984: GUI
     3300986: Garage001
+    3300988: Locker1
     4300000: Ceiling
     4300002: Cylinder127
     4300004: Cylinder118
