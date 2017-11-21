@@ -29,12 +29,21 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
+        name: _Cutoff
+      second: 0.5
+    - first:
         name: _Multiplier
-      second: 0.09
+      second: 0.15
+    - first:
+        name: _node_1491
+      second: 0
+    - first:
+        name: _node_5936
+      second: 0.1204855
     m_Colors:
     - first:
         name: _Color
-      second: {r: 0.9822516, g: 1, b: 0.8161765, a: 1}
+      second: {r: 0.9822516, g: 1, b: 0.81617653, a: 1}
     - first:
         name: _node_5396
       second: {r: 0.9723125, g: 1, b: 0.71323526, a: 1}
