@@ -52,22 +52,22 @@ public class Upgrade : MonoBehaviour
         transparentColor.a = 0.2f;
     }
 
-    private void OnEnable()
+    public void OnEnable()
     {
         _playerData = PlayerData.instance;
     }
 
-    private void OnMouseEnter()
+    public void OnMouseEnter()
     {
         screenUpgrades.ShowTooltip(type.ToString(), description, cost);
     }
 
-    private void OnMouseExit()
+    public void OnMouseExit()
     {
         screenUpgrades.HideTooltip();
     }
 
-    void OnMouseDown()
+    public void OnMouseDown()
     {
         PurchaseUpgrade();
     }
