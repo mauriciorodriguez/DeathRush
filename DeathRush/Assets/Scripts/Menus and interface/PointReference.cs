@@ -69,8 +69,8 @@ public class PointReference : MonoBehaviour
     private void CheckIfMouseIsOver()
     {
         if (enableMoveToSection) return;
+        if (screenMyWeapons == null || screenMyWeapons._playerData == null || screenMyWeapons._playerData.racerList.Count == 0) return;
 
-        if (screenMyWeapons == null || screenMyWeapons._playerData == null) return;
         if (screenMyWeapons._playerData.racerList[screenMyWeapons._playerData.selectedRacer].equippedPrimaryWeapon == weapon ||
            screenMyWeapons._playerData.racerList[screenMyWeapons._playerData.selectedRacer].equippedSecondaryWeapon == weapon ||
            screenMyWeapons._playerData.racerList[screenMyWeapons._playerData.selectedRacer].equippedGadget == weapon)

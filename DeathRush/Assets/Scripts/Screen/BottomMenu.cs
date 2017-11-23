@@ -13,9 +13,11 @@ public class BottomMenu : ScreenView
     public event Action OnShowGarage = delegate { };
     public event Action OnShowHireRacer = delegate { };
     public event Action OnShowSearchForRace = delegate { };
-    public event Action OnShowWeapons = delegate { };
+    public event Action OnShowMyWeapons = delegate { };
     public event Action OnShowVehiclesToBuy = delegate { };
     public event Action OnGameOver = delegate { };
+    public event Action OnShowVehiclesShop = delegate { };
+    public event Action OnShowWeaponsShop = delegate { };
 
     public Text textResources;
     public Text textChaos;
@@ -129,6 +131,22 @@ public class BottomMenu : ScreenView
         }
     }
 
+    public void BTNShowVehiclesShop()
+    {
+        if (_playerData.selectedRacer != -1)
+        {
+            OnShowVehiclesShop();
+        }
+    }
+
+    public void BTNShowWeaponsShop()
+    {
+        if (_playerData.selectedRacer != -1)
+        {
+            OnShowWeaponsShop();
+        }
+    }
+
     public void BTNShowChaosMap()
     {
         if (_playerData.selectedRacer != -1)
@@ -152,8 +170,7 @@ public class BottomMenu : ScreenView
         refPoint.SetActive(false);
         if (_playerData.selectedRacer != -1)
         {
-            OnShowGarage();
-            OnShowGarage();
+            cameraMenu.setMount(cameraMenu.garageMount);
         }
         else
         {

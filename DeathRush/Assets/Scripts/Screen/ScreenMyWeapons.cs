@@ -2,23 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScreenMyWeapons : ScreenView
+public class ScreenMyWeapons : MonoBehaviour
 {
     public PlayerData _playerData { get; private set; }
 
     public GameObject[] myWeapons;
 
-    private void OnEnable()
+    private void Awake()
     {
      //   cameraMenu.setMount(cameraMenu.myWeaponsMount);
         _playerData = PlayerData.instance;
     }
 
 
-    protected override void Update()
+    protected void Update()
     {
-        foreach (var wp in myWeapons) if (!_playerData.unlockedWeapons.Contains(wp.GetComponentInChildren<PointReference>().weapon)) wp.SetActive(false);
+        if (_playerData == null)
+        {
+            Awake();
+            return;
+        }
 
+        foreach (var wp in myWeapons)
+        {
+            if (!_playerData.unlockedWeapons.Contains(wp.GetComponentInChildren<PointReference>().weapon)) wp.SetActive(false);
+            else wp.SetActive(true);
+        }
     }
 
 

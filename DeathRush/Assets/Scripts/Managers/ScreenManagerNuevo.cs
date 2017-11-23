@@ -5,7 +5,8 @@ public class ScreenManagerNuevo : MonoBehaviour
 {
     public ScreenView firstScreen, firstContinueScreen;
     public ScreenNewGame screenNewGame;
-    public ScreenGarage screenGarage;
+    public ScreenVehiclesShop screenVehiclesShop;
+    public ScreenWeaponsShop screenWeaponsShop;
     public ScreenSearchRace screenSearchRace;
     public ScreenHirePilot screenHirePilot;
     public ScreenHUB screenHub;
@@ -70,7 +71,7 @@ public class ScreenManagerNuevo : MonoBehaviour
         screenNewGame.OnCredits += () => GoToScreen(screenCredits);
 
         //Garage
-        screenGarage.OnExit += () => GoToScreen(screenHub);
+        screenVehiclesShop.OnExit += () => GoToScreen(screenHub);
 
         //HUB
         screenHub.OnStatsSelect += () => GoToScreen(screenRacerInfo);
@@ -106,7 +107,8 @@ public class ScreenManagerNuevo : MonoBehaviour
         bottomMenu.OnShowUpgrade += () => GoToScreen(screenUpgrades);
         bottomMenu.OnShowChaosMap += () => GoToScreen(screenChaosMap);
         bottomMenu.OnShowHUB += () => GoToScreen(screenHub);
-        bottomMenu.OnShowGarage += () => GoToScreen(screenGarage);
+        bottomMenu.OnShowVehiclesShop += () => GoToScreen(screenVehiclesShop);
+        bottomMenu.OnShowWeaponsShop += () => GoToScreen(screenWeaponsShop);
         bottomMenu.OnShowHireRacer += () => GoToScreen(screenHirePilot);
         bottomMenu.OnShowSearchForRace += () => GoToScreen(screenSearchRace);
         bottomMenu.OnGameOver += () => GoToScreen(screenGameOver);
