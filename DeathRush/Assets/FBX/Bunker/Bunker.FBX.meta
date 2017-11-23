@@ -636,6 +636,11 @@ ModelImporter:
     101256: Hold025
     101258: Hold026
     101260: Hold027
+    101262: Hold028
+    101264: Hold029
+    101266: Hold030
+    101268: Hold031
+    101270: Hold032
     400000: BigMonitor
     400002: BigMonitor003
     400004: BigMonitor2
@@ -1267,6 +1272,11 @@ ModelImporter:
     401256: Hold025
     401258: Hold026
     401260: Hold027
+    401262: Hold028
+    401264: Hold029
+    401266: Hold030
+    401268: Hold031
+    401270: Hold032
     2300000: Box001
     2300002: Box002
     2300004: Box022
@@ -1808,6 +1818,10 @@ ModelImporter:
     2301076: Hold024
     2301078: Hold025
     2301080: Hold026
+    2301082: Hold028
+    2301084: Hold029
+    2301086: Hold030
+    2301088: Hold031
     3300000: Box001
     3300002: Box002
     3300004: Box022
@@ -2349,6 +2363,10 @@ ModelImporter:
     3301076: Hold024
     3301078: Hold025
     3301080: Hold026
+    3301082: Hold028
+    3301084: Hold029
+    3301086: Hold030
+    3301088: Hold031
     4300000: Ceiling
     4300002: Cylinder127
     4300004: Cylinder118
@@ -2887,6 +2905,10 @@ ModelImporter:
     4301070: Hold024
     4301072: Hold025
     4301074: Hold026
+    4301076: Hold028
+    4301078: Hold029
+    4301080: Hold030
+    4301082: Hold031
   materials:
     importMaterials: 1
     materialName: 1

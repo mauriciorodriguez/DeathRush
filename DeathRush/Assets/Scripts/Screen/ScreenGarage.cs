@@ -42,6 +42,7 @@ public class ScreenGarage : ScreenView
         foreach (var button in _listGarageButtons)
         {
             button.GetComponent<Image>().color = Color.white;
+
             if (_playerData.unlockedWeapons.Contains(button.weaponType))
             {
                 button.GetComponent<Image>().color = Color.yellow;

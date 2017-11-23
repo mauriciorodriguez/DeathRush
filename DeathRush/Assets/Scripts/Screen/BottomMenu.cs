@@ -110,7 +110,7 @@ public class BottomMenu : ScreenView
         if (_playerData.selectedRacer != -1)
         {
             refPoint.SetActive(false);
-            cameraMenu.setMount(cameraMenu.weaponsMount);
+            cameraMenu.setMount(cameraMenu.myWeaponsMount);
             CheckStatusReferencePoints(refPoint);
         }
     }

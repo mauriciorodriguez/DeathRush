@@ -81,6 +81,9 @@ public class PlayerData : MonoBehaviour
             {
                 unlockedWeapons.Add(racer.equippedGadget);
             }
+
+            unlockedWeapons.Add(Weapon.Type.Turret);
+            unlockedWeapons.Add(Weapon.Type.LockLauncher);
             racer.SaveRacer(_racerCount);
             _racerCount++;
         }
