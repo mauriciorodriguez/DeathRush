@@ -160,7 +160,9 @@ public class BottomMenu : ScreenView
         if (_playerData.selectedRacer != -1)
         {
             refPoint.SetActive(false);
-            OnShowHUB();
+            //     OnShowHUB();
+            cameraMenu.setMount(cameraMenu.hubMount);
+
             CheckStatusReferencePoints(refPoint);
         }
     }

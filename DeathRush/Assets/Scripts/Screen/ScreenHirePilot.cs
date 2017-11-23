@@ -17,6 +17,7 @@ public class ScreenHirePilot : ScreenView
     public Sprite truckIcon;
     public Sprite alienIcon;
 
+    public ScreenGarage screenGarage;
 
     private void OnEnable()
     {
@@ -107,6 +108,8 @@ public class ScreenHirePilot : ScreenView
         _playerData.AddRacer(rd);
         _playerData.racersForHire.RemoveAll(x => x.positionInHire == racer.positionInHire);
         btn.transform.parent.gameObject.SetActive(false);
+
+        screenGarage.EnableVehicle(racer.racerVehicle);
     }
 
 }

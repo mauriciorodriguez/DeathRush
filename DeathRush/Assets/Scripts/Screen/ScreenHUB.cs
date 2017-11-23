@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine.SceneManagement;
 
-public class ScreenHUB : ScreenView
+public class ScreenHUB : MonoBehaviour
 {
     public event Action OnStatsSelect = delegate { };
 
@@ -15,13 +15,13 @@ public class ScreenHUB : ScreenView
     public Button stats;
 
     private PlayerData _playerData;
+    private int _racersCount;
 
-    private void OnEnable()
+    private void Awake()
     {
-        cameraMenu.setMount(cameraMenu.hubMount);
+        //cameraMenu.setMount(cameraMenu.hubMount);
         _playerData = PlayerData.instance;
-        InitButtons();
-        ShowSelectedInfo();
+        _racersCount = 1;
     }
 
     private void InitButtons()
@@ -33,8 +33,20 @@ public class ScreenHUB : ScreenView
         }
     }
 
-    protected override void Update()
+    protected void Update()
     {
+        if (_playerData == null)
+        {
+            _playerData = PlayerData.instance;
+            return;
+        }
+
+        if (_playerData != null && _playerData.racerList.Count != _racersCount)
+        {
+            InitButtons();
+            ShowSelectedInfo();
+            _racersCount = _playerData.racerList.Count;
+        }
         var racer = _playerData.GetSelectedRacer();
         if (racer == null) return;
         textRepairAmount.text = "Vehicle's state: " + racer.currentLife + "/" + racer.maxLife;
@@ -70,6 +82,7 @@ public class ScreenHUB : ScreenView
         stats.transform.localPosition = aux;
         stats.gameObject.SetActive(true);
         exhibition.ExhibitVehicle(_playerData.racerList[_playerData.selectedRacer].racerVehicle);
+
     }
 
     public void OnSelectRacer1()

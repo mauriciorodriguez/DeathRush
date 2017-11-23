@@ -14,11 +14,13 @@ public class ScreenVehiclesShop : ScreenView
     private List<VehicleVars.Type> _vehiclesToShow = new List<VehicleVars.Type> { VehicleVars.Type.Buggy, VehicleVars.Type.Bigfoot, VehicleVars.Type.Truck, VehicleVars.Type.Alien };
     private int _vehiclesToShowPosition;
 
+    public ScreenGarage screenGarage;
+
     private void OnEnable()
     {
         _playerData = PlayerData.instance;
-        ExhibitVehicle();
         _vehiclesToShowPosition = _vehiclesToShow.IndexOf(_playerData.racerList[_playerData.selectedRacer].racerVehicleType);
+        ExhibitVehicle();
         InitButtons();
     }
 
@@ -40,10 +42,13 @@ public class ScreenVehiclesShop : ScreenView
 
     public void OnChangeCar(int i)
     {
-        _vehiclesToShowPosition += i;
         int vehiclesToShowMax = _playerData.playerUpgrades.Contains(Upgrade.Type.AlienVehicle) ? _vehiclesToShow.Count - 1 : _vehiclesToShow.Count - 2;
-        if (_vehiclesToShowPosition > vehiclesToShowMax) _vehiclesToShowPosition = 0;
-        if (_vehiclesToShowPosition < 0) _vehiclesToShowPosition = _vehiclesToShow.Count - 1;
+
+        if (_vehiclesToShowPosition == vehiclesToShowMax && Mathf.Sign(i) == 1) _vehiclesToShowPosition = -1;
+        if (_vehiclesToShowPosition == 0 && Mathf.Sign(i) == -1) _vehiclesToShowPosition = vehiclesToShowMax + 1;
+
+        _vehiclesToShowPosition += i;
+
         ExhibitVehicle();
         InitButtons();
         if (_playerData.racerList[_playerData.selectedRacer].unlockedVehicles.Contains(_vehiclesToShow[_vehiclesToShowPosition]))
@@ -63,14 +68,17 @@ public class ScreenVehiclesShop : ScreenView
             _playerData.racerList[_playerData.selectedRacer].racerVehicleType = _vehiclesToShow[_vehiclesToShowPosition];
             _playerData.resources -= cost;
             _playerData.racerList[_playerData.selectedRacer].CompleateLoadInit();
+
+            screenGarage.EnableVehicle(VehicleVars.prefabsDict[_vehiclesToShow[_vehiclesToShowPosition]]().GetComponent<Vehicle>().vehicleVars.vehicleType);
         }
     }
 
     public void ExhibitVehicle()
     {
         if (_vehicleToExhibit) Destroy(_vehicleToExhibit.gameObject);
+
         var vType = _vehiclesToShow[_vehiclesToShowPosition];
-        _vehicleToExhibit = Instantiate(VehicleVars.prefabsDict[vType]()).GetComponent<Vehicle>();
+        _vehicleToExhibit = Instantiate((GameObject)VehicleVars.prefabsDict[vType]()).GetComponent<Vehicle>();
         _vehicleToExhibit.vehicleVars.vehicleType = vType;
         _vehicleToExhibit.InstantiateWeapons(_playerData.racerList[_playerData.selectedRacer].equippedPrimaryWeapon, _playerData.racerList[_playerData.selectedRacer].equippedSecondaryWeapon, _playerData.racerList[_playerData.selectedRacer].equippedGadget, true);
         _vehicleToExhibit.EnableComponents(false);

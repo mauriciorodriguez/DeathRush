@@ -9,6 +9,7 @@ public class VehicleExhibition : MonoBehaviour
 
     private PlayerData _playerData;
     private Vehicle _vehicleToExhibit;
+    public Transform[] vehiclesPosition;
 
     private void OnEnable()
     {
@@ -27,11 +28,27 @@ public class VehicleExhibition : MonoBehaviour
         _vehicleToExhibit = Instantiate(vehicle.gameObject).GetComponent<Vehicle>();
         _vehicleToExhibit.InstantiateWeapons(_playerData.racerList[_playerData.selectedRacer].equippedPrimaryWeapon, _playerData.racerList[_playerData.selectedRacer].equippedSecondaryWeapon, _playerData.racerList[_playerData.selectedRacer].equippedGadget,true);
         _vehicleToExhibit.EnableComponents(false);
-        _vehicleToExhibit.transform.parent = transform;
-        _vehicleToExhibit.transform.localPosition = Vector3.zero;
-        _vehicleToExhibit.transform.rotation = transform.rotation;
-        _vehicleToExhibit.transform.localScale = Vector3.one * 30;
 
+        if(_vehicleToExhibit.vehicleVars.vehicleType == VehicleVars.Type.Buggy)
+        {
+            _vehicleToExhibit.transform.parent = vehiclesPosition[0];
+            _vehicleToExhibit.transform.position = vehiclesPosition[0].position;
+        }
+        else if (_vehicleToExhibit.vehicleVars.vehicleType == VehicleVars.Type.Bigfoot)
+        {
+            _vehicleToExhibit.transform.parent = vehiclesPosition[1];
+            _vehicleToExhibit.transform.position = vehiclesPosition[1].position;
+        }
+        else if (_vehicleToExhibit.vehicleVars.vehicleType == VehicleVars.Type.Truck)
+        {
+            _vehicleToExhibit.transform.parent = vehiclesPosition[2];
+            _vehicleToExhibit.transform.position = vehiclesPosition[2].position;
+        }
+        else if (_vehicleToExhibit.vehicleVars.vehicleType == VehicleVars.Type.Alien)
+        {
+            _vehicleToExhibit.transform.parent = vehiclesPosition[3];
+            _vehicleToExhibit.transform.position = vehiclesPosition[3].position;
+        }
 
         barsManager.OnImplementation();
         barsManager.BarStats(_vehicleToExhibit.vehicleVars.vehicleType);

@@ -66,20 +66,20 @@ public class ScreenManagerNuevo : MonoBehaviour
     {
         //Main menu
         screenNewGame.OnNewCampaign += () => GoToScreen(screenCountrySelect);
-        screenNewGame.OnContinue += () => GoToScreen(screenHub);
+      //  screenNewGame.OnContinue += () => GoToScreen(screenHub);
         screenNewGame.OnOptions += () => GoToScreen(screenOptions);
         screenNewGame.OnCredits += () => GoToScreen(screenCredits);
 
         //Garage
-        screenVehiclesShop.OnExit += () => GoToScreen(screenHub);
+     //   screenVehiclesShop.OnExit += () => GoToScreen(screenHub);
 
         //HUB
         screenHub.OnStatsSelect += () => GoToScreen(screenRacerInfo);
 
         //Search Race
-        screenSearchRace.OnExit += () => GoToScreen(screenHub);
+     //   screenSearchRace.OnExit += () => GoToScreen(screenHub);
         screenSearchRace.OnNoPilot += () => GoToScreen(screenHirePilot);
-        screenSearchRace.OnNoSelectedPilot += () => GoToScreen(screenHub);
+    //    screenSearchRace.OnNoSelectedPilot += () => GoToScreen(screenHub);
 
         //Country Select
         screenCountrySelect.OnExit += () => GoToScreen(screenNewGame);
@@ -92,13 +92,13 @@ public class ScreenManagerNuevo : MonoBehaviour
         screenCredits.OnExit += () => GoToScreen(screenNewGame);
 
         //Post Game
-        screenPostGame.OnExit += () => GoToScreen(screenHub);
+     //   screenPostGame.OnExit += () => GoToScreen(screenHub);
 
         //Racer Info
-        screenRacerInfo.OnExit += () => GoToScreen(screenHub);
+     //   screenRacerInfo.OnExit += () => GoToScreen(screenHub);
 
         //Hire Pilot
-        screenHirePilot.OnExit += () => GoToScreen(screenHub);
+    //    screenHirePilot.OnExit += () => GoToScreen(screenHub);
 
         //Game Over
         screenGameOver.OnExit += () => GoToScreen(screenNewGame);
@@ -106,7 +106,7 @@ public class ScreenManagerNuevo : MonoBehaviour
         //Bottom Menu
         bottomMenu.OnShowUpgrade += () => GoToScreen(screenUpgrades);
         bottomMenu.OnShowChaosMap += () => GoToScreen(screenChaosMap);
-        bottomMenu.OnShowHUB += () => GoToScreen(screenHub);
+     //   bottomMenu.OnShowHUB += () => GoToScreen(screenHub);
         bottomMenu.OnShowVehiclesShop += () => GoToScreen(screenVehiclesShop);
         bottomMenu.OnShowWeaponsShop += () => GoToScreen(screenWeaponsShop);
         bottomMenu.OnShowHireRacer += () => GoToScreen(screenHirePilot);
