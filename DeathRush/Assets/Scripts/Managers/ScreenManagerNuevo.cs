@@ -71,13 +71,13 @@ public class ScreenManagerNuevo : MonoBehaviour
         screenNewGame.OnCredits += () => GoToScreen(screenCredits);
 
         //Garage
-     //   screenVehiclesShop.OnExit += () => GoToScreen(screenHub);
+        screenVehiclesShop.OnExit += () => GoToScreen(screenChaosMap);
 
         //HUB
         screenHub.OnStatsSelect += () => GoToScreen(screenRacerInfo);
 
         //Search Race
-     //   screenSearchRace.OnExit += () => GoToScreen(screenHub);
+        screenSearchRace.OnExit += () => GoToScreen(screenChaosMap);
         screenSearchRace.OnNoPilot += () => GoToScreen(screenHirePilot);
     //    screenSearchRace.OnNoSelectedPilot += () => GoToScreen(screenHub);
 
@@ -92,13 +92,13 @@ public class ScreenManagerNuevo : MonoBehaviour
         screenCredits.OnExit += () => GoToScreen(screenNewGame);
 
         //Post Game
-     //   screenPostGame.OnExit += () => GoToScreen(screenHub);
+        screenPostGame.OnExit += () => GoToScreen(screenChaosMap);
 
         //Racer Info
-     //   screenRacerInfo.OnExit += () => GoToScreen(screenHub);
+        screenRacerInfo.OnExit += () => GoToScreen(screenChaosMap);
 
         //Hire Pilot
-    //    screenHirePilot.OnExit += () => GoToScreen(screenHub);
+        screenHirePilot.OnExit += () => GoToScreen(screenChaosMap);
 
         //Game Over
         screenGameOver.OnExit += () => GoToScreen(screenNewGame);

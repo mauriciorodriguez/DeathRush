@@ -126,9 +126,11 @@ public abstract class Vehicle : MonoBehaviour
         GameObject primaryWeapon = null;
         GameObject secondaryWeapon = null;
         GameObject gadgetGo = null;
-        primaryWeapon = Weapon.prefabsDict[primary]();
-        secondaryWeapon = Weapon.prefabsDict[secondary]();
-        gadgetGo = Weapon.prefabsDict[gadget]();
+
+       if (primary != Weapon.Type.Null) primaryWeapon = Weapon.prefabsDict[primary]();
+       if (secondary != Weapon.Type.Null) secondaryWeapon = Weapon.prefabsDict[secondary]();
+       if (gadget != Weapon.Type.Null) gadgetGo = Weapon.prefabsDict[gadget]();
+
         if (primaryWeapon != null)
         {
             var aux = Instantiate(primaryWeapon);

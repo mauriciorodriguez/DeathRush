@@ -54,6 +54,11 @@ public class GadgetLauncher : MonoBehaviour
         ammoCount = ammos;
     }
 
+    public GameObject GetGadget()
+    {
+        return _gadget;
+    }
+
     public void SetGadget(GameObject gad)
     {
         _gadget = gad;

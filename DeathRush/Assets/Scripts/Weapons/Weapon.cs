@@ -36,7 +36,8 @@ public class Weapon : MonoBehaviour
         Shield,
         Smoke,
         ElectromagneticMine,
-        CombatDrone
+        CombatDrone,
+        Null
     }
 
     public Type weaponType;
