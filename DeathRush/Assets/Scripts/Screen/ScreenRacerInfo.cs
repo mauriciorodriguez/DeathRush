@@ -16,6 +16,7 @@ public class ScreenRacerInfo : ScreenView
     private void OnEnable()
     {
         cameraMenu.setMount(cameraMenu.racerInfoMount);
+        assistRobot.setMount(assistRobot.arRacerInfoMount);
         _playerData = PlayerData.instance;
         _racerData = _playerData.racerList[_playerData.selectedRacer];
         Init();

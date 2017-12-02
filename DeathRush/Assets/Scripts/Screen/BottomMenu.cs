@@ -34,6 +34,7 @@ public class BottomMenu : ScreenView
     private void OnEnable()
     {
         _playerData = PlayerData.instance;
+        if (_playerData == null) return;
         if (_playerData.countryChaos[_playerData.countryType] + chaosResources < 100)
         {
             getResourcesButton.gameObject.SetActive(true);
@@ -113,6 +114,7 @@ public class BottomMenu : ScreenView
         {
             refPoint.SetActive(false);
             cameraMenu.setMount(cameraMenu.myWeaponsMount);
+            assistRobot.setMount(assistRobot.arMyWeaponsMount);
             CheckStatusReferencePoints(refPoint);
         }
     }
@@ -120,7 +122,8 @@ public class BottomMenu : ScreenView
     {
         if (_playerData.selectedRacer != -1)
         {
-            cameraMenu.setMount(cameraMenu.selectCountry);
+            cameraMenu.setMount(cameraMenu.hirePilotMount);
+            assistRobot.setMount(assistRobot.arHirePilotMount);
         }
     }
     public void BTNShowUpgrade()
@@ -128,6 +131,8 @@ public class BottomMenu : ScreenView
         if (_playerData.selectedRacer != -1)
         {
             OnShowUpgrade();
+            cameraMenu.setMount(cameraMenu.hirePilotMount);
+            assistRobot.setMount(assistRobot.arHirePilotMount);
         }
     }
 
@@ -136,6 +141,8 @@ public class BottomMenu : ScreenView
         if (_playerData.selectedRacer != -1)
         {
             OnShowVehiclesShop();
+            cameraMenu.setMount(cameraMenu.hirePilotMount);
+            assistRobot.setMount(assistRobot.arHirePilotMount);
         }
     }
 
@@ -144,6 +151,8 @@ public class BottomMenu : ScreenView
         if (_playerData.selectedRacer != -1)
         {
             OnShowWeaponsShop();
+            cameraMenu.setMount(cameraMenu.hirePilotMount);
+            assistRobot.setMount(assistRobot.arHirePilotMount);
         }
     }
 
@@ -152,6 +161,8 @@ public class BottomMenu : ScreenView
         if (_playerData.selectedRacer != -1)
         {
             OnShowChaosMap();
+            cameraMenu.setMount(cameraMenu.hirePilotMount);
+            assistRobot.setMount(assistRobot.arHirePilotMount);
         }
     }
 
@@ -162,7 +173,7 @@ public class BottomMenu : ScreenView
             refPoint.SetActive(false);
             //     OnShowHUB();
             cameraMenu.setMount(cameraMenu.hubMount);
-
+            assistRobot.setMount(assistRobot.arHubMount);
             CheckStatusReferencePoints(refPoint);
         }
     }
@@ -173,6 +184,7 @@ public class BottomMenu : ScreenView
         if (_playerData.selectedRacer != -1)
         {
             cameraMenu.setMount(cameraMenu.garageMount);
+            assistRobot.setMount(assistRobot.arGarageMount);
         }
         else
         {

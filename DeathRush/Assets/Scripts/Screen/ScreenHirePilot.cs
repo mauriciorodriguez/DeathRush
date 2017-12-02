@@ -22,6 +22,7 @@ public class ScreenHirePilot : ScreenView
     private void OnEnable()
     {
         cameraMenu.setMount(cameraMenu.hirePilotMount);
+        assistRobot.setMount(assistRobot.arHirePilotMount);
         if (!_playerData) _playerData = PlayerData.instance;
         _hireButtons = new List<ButtonHireRacer>();
         _hireButtons.AddRange(GetComponentsInChildren<ButtonHireRacer>(true));

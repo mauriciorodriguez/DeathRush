@@ -27,6 +27,7 @@ public class ScreenSearchRace : ScreenView
     private void OnEnable()
     {
         cameraMenu.setMount(cameraMenu.searchRaceMount);
+        assistRobot.setMount(assistRobot.arSearchRaceMount);
         _playerData = PlayerData.instance;
         loading.SetActive(false);
         EnableTracks();

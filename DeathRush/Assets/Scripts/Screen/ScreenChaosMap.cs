@@ -15,6 +15,7 @@ public class ScreenChaosMap : ScreenView
     {
         SetData();
         cameraMenu.setMount(cameraMenu.chaosMapMount);
+        assistRobot.setMount(assistRobot.arChaosMapMount);
     }
 
     public void SetData()

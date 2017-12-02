@@ -12,6 +12,7 @@ public class ScreenUpgrades : ScreenView
     private void OnEnable()
     {
         cameraMenu.setMount(cameraMenu.upgradesMount);
+        assistRobot.setMount(assistRobot.arUpgradesMount);
         _playerData = PlayerData.instance;
         ShowUpgrades();
     }

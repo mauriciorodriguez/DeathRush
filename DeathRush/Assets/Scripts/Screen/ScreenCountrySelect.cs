@@ -16,6 +16,7 @@ public class ScreenCountrySelect : ScreenView {
     private void OnEnable()
     {
         cameraMenu.setMount(cameraMenu.selectCountry);
+        assistRobot.setMount(assistRobot.arSelectCountry);
         renderers = GetComponentsInChildren<Renderer>();
 
         mats = new Material[8];

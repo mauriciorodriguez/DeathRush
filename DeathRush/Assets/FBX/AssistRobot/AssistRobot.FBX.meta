@@ -1,0 +1,255 @@
+fileFormatVersion: 2
+guid: 05dab6fbda187ac4a925faec263b7d9a
+timeCreated: 1511914000
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Box001
+    100004: Box002
+    100006: Cylinder001
+    100008: Sphere001
+    100010: Cylinder002
+    100012: Cylinder003
+    100014: Plane001
+    100016: Sphere002
+    100018: Cylinder004
+    100020: Cylinder005
+    100022: Box141
+    100024: Satellite001
+    100026: Box003
+    100028: ChamferBox001
+    100030: ChamferBox002
+    100032: Cylinder006
+    100034: Cylinder007
+    100036: Cylinder008
+    100038: Body
+    100040: Monitor
+    100042: MonitorTongue
+    100044: Satellite
+    100046: Table
+    100048: Bone001
+    100050: Bone002
+    100052: Circle001
+    100054: Circle002
+    100056: DownBody
+    100058: UpBody
+    100060: AssistRobot
+    400000: //RootNode
+    400002: Box001
+    400004: Box002
+    400006: Cylinder001
+    400008: Sphere001
+    400010: Cylinder002
+    400012: Cylinder003
+    400014: Plane001
+    400016: Sphere002
+    400018: Cylinder004
+    400020: Cylinder005
+    400022: Box141
+    400024: Satellite001
+    400026: Box003
+    400028: ChamferBox001
+    400030: ChamferBox002
+    400032: Cylinder006
+    400034: Cylinder007
+    400036: Cylinder008
+    400038: Body
+    400040: Monitor
+    400042: MonitorTongue
+    400044: Satellite
+    400046: Table
+    400048: Bone001
+    400050: Bone002
+    400052: Circle001
+    400054: Circle002
+    400056: DownBody
+    400058: UpBody
+    400060: AssistRobot
+    2300000: Box001
+    2300002: Box002
+    2300004: Cylinder001
+    2300006: Sphere001
+    2300008: Cylinder002
+    2300010: Cylinder003
+    2300012: Plane001
+    2300014: Sphere002
+    2300016: Cylinder004
+    2300018: Cylinder005
+    2300020: Box141
+    2300022: Satellite001
+    2300024: Box003
+    2300026: ChamferBox001
+    2300028: ChamferBox002
+    2300030: Cylinder006
+    2300032: Cylinder007
+    2300034: Cylinder008
+    2300036: Body
+    2300038: Monitor
+    2300040: Satellite
+    2300042: Table
+    3300000: Box001
+    3300002: Box002
+    3300004: Cylinder001
+    3300006: Sphere001
+    3300008: Cylinder002
+    3300010: Cylinder003
+    3300012: Plane001
+    3300014: Sphere002
+    3300016: Cylinder004
+    3300018: Cylinder005
+    3300020: Box141
+    3300022: Satellite001
+    3300024: Box003
+    3300026: ChamferBox001
+    3300028: ChamferBox002
+    3300030: Cylinder006
+    3300032: Cylinder007
+    3300034: Cylinder008
+    3300036: Body
+    3300038: Monitor
+    3300040: Satellite
+    3300042: Table
+    4300000: Sphere001
+    4300002: Box001
+    4300004: Box002
+    4300006: Cylinder001
+    4300008: Cylinder002
+    4300010: Plane001
+    4300012: Cylinder003
+    4300014: Sphere002
+    4300016: Cylinder004
+    4300018: Cylinder005
+    4300020: Box141
+    4300022: Satellite001
+    4300024: Cylinder006
+    4300026: Cylinder007
+    4300028: Box003
+    4300030: Cylinder008
+    4300032: ChamferBox001
+    4300034: ChamferBox002
+    4300036: Satellite
+    4300038: Body
+    4300040: Monitor
+    4300042: Table
+    7400000: Idle
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Body
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 125
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: DownBody
+        weight: 1
+      - path: DownBody/Bone002
+        weight: 1
+      - path: MonitorTongue
+        weight: 1
+      - path: MonitorTongue/Monitor
+        weight: 1
+      - path: MonitorTongue/Table
+        weight: 1
+      - path: Satellite
+        weight: 1
+      - path: UpBody
+        weight: 1
+      - path: UpBody/Bone001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
