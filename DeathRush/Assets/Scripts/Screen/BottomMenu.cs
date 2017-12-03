@@ -26,10 +26,14 @@ public class BottomMenu : ScreenView
     public int resourcesChaos, chaosResources;
     public ScreenChaosMap screenChaosMap;
     public List<Button> buttonList;
+    private int _index = -1;
 
     public List<GameObject> referencePoints;
 
     private PlayerData _playerData;
+    public bool disableBottomMenu;
+
+    public Text adviceText;
 
     private void OnEnable()
     {
@@ -41,13 +45,15 @@ public class BottomMenu : ScreenView
             textChaos.text = "Chaos: " + _playerData.countryChaos[_playerData.countryType] + "%";
         }
         else getResourcesButton.gameObject.SetActive(false);
+        _index = -1;
     }
 
     private void EnableButtons()
     {
         if (_playerData.racerList.Count == 0)
         {
-            hireButton.GetComponent<Image>().color = Color.green;
+            if (adviceText != null) adviceText.enabled = false;
+            hireButton.GetComponent<Image>().color = Color.yellow;
             foreach (var btn in buttonList)
             {
                 btn.enabled = false;
@@ -58,12 +64,15 @@ public class BottomMenu : ScreenView
         }
         else
         {
+            if (adviceText != null) adviceText.enabled = true;
             foreach (var refPoint in referencePoints) refPoint.GetComponent<SphereCollider>().enabled = true;
-            hireButton.GetComponent<Image>().color = Color.white;
-            foreach (var btn in buttonList)
+            for (int i = buttonList.Count - 1; i >= 0; i--)
             {
-                btn.enabled = true;
-                btn.GetComponent<Image>().color = btn.colors.normalColor;
+                if(i != _index)
+                {
+                    buttonList[i].enabled = true;
+                    buttonList[i].GetComponent<Image>().color = buttonList[i].colors.normalColor;
+                }
             }
         }
     }
@@ -71,9 +80,11 @@ public class BottomMenu : ScreenView
     protected override void Update()
     {
         base.Update();
-        textResources.text = "$ " + _playerData.resources;
         EnableButtons();
 
+        if (disableBottomMenu) return;
+
+        textResources.text = "$ " + _playerData.resources;
         if (Input.GetKeyDown(KeyCode.F11)) PlayerData.instance.resources = 9999999;
         bool canHireRacer = _playerData.racerList.Count > 0 ? true : _playerData.canHireNewRacers;
         if (_playerData.racerList.Count == 0 && !_playerData.canHireNewRacers)
@@ -94,18 +105,48 @@ public class BottomMenu : ScreenView
         {
             OnGameOver();
         }
+
+        InputChangeScreen();
+    }
+
+    private void InputChangeScreen()
+    {
+        if (_playerData.racerList.Count == 0) return;
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+           if(_index != -1) buttonList[_index].GetComponent<Image>().color = Color.white;
+           if (_index == 4) _index = -1;
+
+            _index++;
+            buttonList[_index].onClick.Invoke();
+            buttonList[_index].GetComponent<Image>().color = Color.yellow;
+
+        }
+        else if (Input.GetKeyDown(KeyCode.A))
+        {
+            if (_index != 5 && _index != -1) buttonList[_index].GetComponent<Image>().color = Color.white;
+            if (_index == -1 || _index == 0) _index = 5;
+
+            _index--;
+            buttonList[_index].onClick.Invoke();
+            buttonList[_index].GetComponent<Image>().color = Color.yellow;
+        }
     }
 
     public void OnGetResourcesButton()
     {
-        _playerData.resources += resourcesChaos;
-        _playerData.countryChaos[_playerData.countryType] += chaosResources;
-        screenChaosMap.SetData();
-        if (_playerData.countryChaos[_playerData.countryType] + chaosResources < 100) getResourcesButton.gameObject.SetActive(true);
-        else getResourcesButton.gameObject.SetActive(false);
+        if (_playerData.selectedRacer != -1)
+        {
+            _playerData.resources += resourcesChaos;
+            _playerData.countryChaos[_playerData.countryType] += chaosResources;
+            screenChaosMap.SetData();
+            if (_playerData.countryChaos[_playerData.countryType] + chaosResources < 100) getResourcesButton.gameObject.SetActive(true);
+            else getResourcesButton.gameObject.SetActive(false);
 
-        //Update chaos
-        textChaos.text = "Chaos: " + _playerData.countryChaos[_playerData.countryType] + "%";
+            //Update chaos
+            textChaos.text = "Chaos: " + _playerData.countryChaos[_playerData.countryType] + "%";
+        }
     }
 
     public void BTNShowWeapons(GameObject refPoint)
@@ -116,14 +157,7 @@ public class BottomMenu : ScreenView
             cameraMenu.setMount(cameraMenu.myWeaponsMount);
             assistRobot.setMount(assistRobot.arMyWeaponsMount);
             CheckStatusReferencePoints(refPoint);
-        }
-    }
-    public void BTNVehiclesToBuy()
-    {
-        if (_playerData.selectedRacer != -1)
-        {
-            cameraMenu.setMount(cameraMenu.hirePilotMount);
-            assistRobot.setMount(assistRobot.arHirePilotMount);
+            _index = 3;
         }
     }
     public void BTNShowUpgrade()
@@ -163,6 +197,7 @@ public class BottomMenu : ScreenView
             OnShowChaosMap();
             cameraMenu.setMount(cameraMenu.hirePilotMount);
             assistRobot.setMount(assistRobot.arHirePilotMount);
+            _index = 0;
         }
     }
 
@@ -175,6 +210,7 @@ public class BottomMenu : ScreenView
             cameraMenu.setMount(cameraMenu.hubMount);
             assistRobot.setMount(assistRobot.arHubMount);
             CheckStatusReferencePoints(refPoint);
+            _index = 4;
         }
     }
 
@@ -185,6 +221,7 @@ public class BottomMenu : ScreenView
         {
             cameraMenu.setMount(cameraMenu.garageMount);
             assistRobot.setMount(assistRobot.arGarageMount);
+            _index = 1;
         }
         else
         {
@@ -208,6 +245,7 @@ public class BottomMenu : ScreenView
             if (_playerData.racerList.Count > 0) OnShowSearchForRace();
             else OnShowHireRacer();
             CheckStatusReferencePoints(refPoint);
+            _index = 2;
         }
     }
 

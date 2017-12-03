@@ -48,13 +48,13 @@ public class ScreenManagerNuevo : MonoBehaviour
         {
             bottomMenu.SetActive(false);
             arBottomMenu.gameObject.SetActive(false);
-            cameraRotationCanvas.SetActive(false);
+       //     cameraRotationCanvas.SetActive(false);
         }
         else
         {
             bottomMenu.SetActive(true);
             arBottomMenu.gameObject.SetActive(true);
-            cameraRotationCanvas.SetActive(true);
+          //  cameraRotationCanvas.SetActive(true);
         }
         if (_currentScreen) _currentScreen.gameObject.SetActive(false);
         screen.gameObject.SetActive(true);
