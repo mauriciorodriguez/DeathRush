@@ -256,4 +256,14 @@ public class BottomMenu : ScreenView
             if (!refPoint.activeSelf && refPoint != referencePoint) refPoint.SetActive(true);
         }
     }
+
+    public void OnMouseEnter(string title)
+    {
+        ShowTooltipTittle(title);
+    }
+
+    public void OnMouseExit()
+    {
+        HideTooltip();
+    }
 }

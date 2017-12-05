@@ -23,6 +23,12 @@ public class ScreenView : MonoBehaviour
         else tooltip.SetText(title, desc);
     }
 
+    public void ShowTooltipTittle(string title)
+    {
+        tooltip.gameObject.SetActive(true);
+        tooltip.SetTextWithTittle(title);
+    }
+
     public void HideTooltip()
     {
         tooltip.gameObject.SetActive(false);

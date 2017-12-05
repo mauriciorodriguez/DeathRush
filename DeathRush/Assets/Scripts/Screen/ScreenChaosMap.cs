@@ -27,18 +27,24 @@ public class ScreenChaosMap : ScreenView
         {
             if (countries[i].chaosLevel <= 30)
             {
-                countries[i].GetComponent<SpriteRenderer>().color = Color.green;
+                countries[i].GetComponent<MeshRenderer>().sharedMaterial.color = Color.green;
             }
             else if (countries[i].chaosLevel <= 70)
             {
-                countries[i].GetComponent<SpriteRenderer>().color = Color.yellow;
+                countries[i].GetComponent<MeshRenderer>().sharedMaterial.color = Color.yellow;
             }
             else if (countries[i].chaosLevel < 100)
             {
-                countries[i].GetComponent<SpriteRenderer>().color = Color.red;
+                countries[i].GetComponent<MeshRenderer>().sharedMaterial.color = Color.red;
             }
-            else countries[i].GetComponent<SpriteRenderer>().color = Color.black;
+            else countries[i].GetComponent<MeshRenderer>().sharedMaterial.color = Color.black;
             chaosTextList[i].text = "%" + countries[i].chaosLevel;
+
+            if (_playerData.countryType == countries[i].countryNameEnum)
+            {
+                countries[i].GetComponent<MeshRenderer>().sharedMaterial.SetFloat("_OpacityClip", 0.05f);
+                countries[i].GetComponent<MeshRenderer>().sharedMaterial.SetColor("_EdgeColor", Color.cyan);
+            }
         }
     }
 }

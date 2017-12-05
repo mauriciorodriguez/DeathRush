@@ -25,9 +25,20 @@ public class Tooltip : MonoBehaviour
             "<color=" + ColorTypeConverter.ToRGBHex(Color.yellow) + ">$" + cost + "</color>";
     }
 
+    public void SetTextWithTittle(string title)
+    {
+        backgroundText.text = StringSplitter.Split(title);
+        visualText.text = "<color=" + ColorTypeConverter.ToRGBHex(Color.white) + ">" + StringSplitter.Split(title) + "</color>\n";
+    }
+
     private void OnEnable()
     {
         _planeDistance = GetComponentInParent<Canvas>().planeDistance;
+
+        //Da un valor de 100 en BottomMenu por eso la asignación de abajo  
+        _planeDistance = 1;
+
+
         _rectTransform = GetComponent<RectTransform>();
         mainCamera = Camera.main;
     }

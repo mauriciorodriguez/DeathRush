@@ -19,7 +19,7 @@ public class ScreenManagerNuevo : MonoBehaviour
     public ScreenRacerInfo screenRacerInfo;
     public ScreenGameOver screenGameOver;
     public BottomMenu arBottomMenu;
-    public GameObject bottomMenu;
+    public BottomMenu bottomMenu;
     public PlayerData playerData;
     public GameObject cameraRotationCanvas;
     private ScreenView _currentScreen;
@@ -46,13 +46,13 @@ public class ScreenManagerNuevo : MonoBehaviour
             screen is ScreenRacerInfo ||
             screen is ScreenGameOver)
         {
-            bottomMenu.SetActive(false);
+            bottomMenu.gameObject.SetActive(false);
             arBottomMenu.gameObject.SetActive(false);
        //     cameraRotationCanvas.SetActive(false);
         }
         else
         {
-            bottomMenu.SetActive(true);
+            bottomMenu.gameObject.SetActive(true);
             arBottomMenu.gameObject.SetActive(true);
           //  cameraRotationCanvas.SetActive(true);
         }
@@ -115,5 +115,15 @@ public class ScreenManagerNuevo : MonoBehaviour
         arBottomMenu.OnShowHireRacer += () => GoToScreen(screenHirePilot);
         arBottomMenu.OnShowSearchForRace += () => GoToScreen(screenSearchRace);
         arBottomMenu.OnGameOver += () => GoToScreen(screenGameOver);
+
+        //Bottom Menu
+        bottomMenu.OnShowUpgrade += () => GoToScreen(screenUpgrades);
+        bottomMenu.OnShowChaosMap += () => GoToScreen(screenChaosMap);
+        //   bottomMenu.OnShowHUB += () => GoToScreen(screenHub);
+        bottomMenu.OnShowVehiclesShop += () => GoToScreen(screenVehiclesShop);
+        bottomMenu.OnShowWeaponsShop += () => GoToScreen(screenWeaponsShop);
+        bottomMenu.OnShowHireRacer += () => GoToScreen(screenHirePilot);
+        bottomMenu.OnShowSearchForRace += () => GoToScreen(screenSearchRace);
+        bottomMenu.OnGameOver += () => GoToScreen(screenGameOver);
     }
 }
