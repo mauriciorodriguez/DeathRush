@@ -543,7 +543,17 @@ Prefab:
       propertyPath: exhibition
       value: 
       objectReference: {fileID: 413151286}
-    m_RemovedComponents: []
+    - target: {fileID: 108294, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 64227737127683676, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
+    - {fileID: 64329284839444276, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
+    - {fileID: 64686966140372526, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
+    - {fileID: 64600561921975632, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
+    - {fileID: 64726796717614136, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
+    - {fileID: 64941757952401908, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &656543123 stripped

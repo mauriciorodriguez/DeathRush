@@ -45,6 +45,11 @@ public class ScreenChaosMap : ScreenView
                 countries[i].GetComponent<MeshRenderer>().sharedMaterial.SetFloat("_OpacityClip", 0.05f);
                 countries[i].GetComponent<MeshRenderer>().sharedMaterial.SetColor("_EdgeColor", Color.cyan);
             }
+            else
+            {
+                countries[i].GetComponent<MeshRenderer>().sharedMaterial.SetFloat("_OpacityClip", 0.55f);
+                countries[i].GetComponent<MeshRenderer>().sharedMaterial.SetColor("_EdgeColor", Color.white);
+            }
         }
     }
 }
