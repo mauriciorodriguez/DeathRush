@@ -99,6 +99,9 @@ public class ScreenHirePilot : ScreenView
             _playerData.selectedRacer = _playerData.racerList.Count - 1;
             _playerData.resources -= cost;
             _playerData.hiredRacers++;
+
+            screenGarage.EnableVehicle(_pilotHired.portrait.racerVehicle);
+            screenGarage.SelectVehicle(_pilotHired.portrait.racerVehicle);
         }
     }
 
@@ -109,8 +112,6 @@ public class ScreenHirePilot : ScreenView
         _playerData.AddRacer(rd);
         _playerData.racersForHire.RemoveAll(x => x.positionInHire == racer.positionInHire);
         btn.transform.parent.gameObject.SetActive(false);
-
-        screenGarage.EnableVehicle(racer.racerVehicle);
     }
 
 }
