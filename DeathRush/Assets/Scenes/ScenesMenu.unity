@@ -1323,6 +1323,22 @@ Prefab:
       propertyPath: vehicleExhibition
       value: 
       objectReference: {fileID: 413151286}
+    - target: {fileID: 1720027195460118, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 195648, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11406790, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 115888, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 64227737127683676, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}
     - {fileID: 64329284839444276, guid: 4ec0570aea072cc4282bf82287a45477, type: 2}

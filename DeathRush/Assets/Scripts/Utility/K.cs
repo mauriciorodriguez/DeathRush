@@ -182,7 +182,7 @@ public class K
     public const float MINIMAP_HEIGHT = 50;
 
     // ===== GAME PRESETS =====
-    public const int MAX_LAPS = 1;
+    public const int MAX_LAPS = 3;
     public const int MAX_RACERS = 5;
 
     // ===== SCENE CONTAINERS =====
