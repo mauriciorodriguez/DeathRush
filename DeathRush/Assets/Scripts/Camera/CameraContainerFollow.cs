@@ -58,6 +58,7 @@ public class CameraContainerFollow : MonoBehaviour
 
 
         //Rota eje X en situaciones de vehículo inclinado.
+
         if (SceneManager.GetActiveScene().buildIndex == (int)SCENES_NUMBER.InsideTheCore)
         {
             if (target.transform.localEulerAngles.x > vehicleAngleToRotate - 10 && target.transform.localEulerAngles.x < 90) _canRotate = true;

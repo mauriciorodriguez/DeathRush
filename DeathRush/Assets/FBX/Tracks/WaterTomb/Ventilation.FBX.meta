@@ -11,24 +11,29 @@ ModelImporter:
     100006: Palet1
     100008: //RootNode
     100010: Ventilation
+    100012: Holder
     400000: Center
     400002: Palet002
     400004: Palet003
     400006: Palet1
     400008: //RootNode
     400010: Ventilation
+    400012: Holder
     2300000: Center
     2300002: Palet002
     2300004: Palet003
     2300006: Palet1
+    2300008: Holder
     3300000: Center
     3300002: Palet002
     3300004: Palet003
     3300006: Palet1
+    3300008: Holder
     4300000: Center
     4300002: Palet1
     4300004: Palet002
     4300006: Palet003
+    4300008: Holder
   materials:
     importMaterials: 1
     materialName: 0
@@ -36,7 +41,7 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
@@ -75,6 +80,7 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -85,7 +91,10 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 0
   humanoidOversampling: 1
