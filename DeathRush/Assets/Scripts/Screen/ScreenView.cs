@@ -38,7 +38,7 @@ public class ScreenView : MonoBehaviour
     /// Metodo para volver a la pantalla anterior.
     /// </summary>
 	public virtual void OnBackButton()
-    {
+    { 
         Exit();
     }
 

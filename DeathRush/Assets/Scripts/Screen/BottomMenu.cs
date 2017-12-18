@@ -60,6 +60,9 @@ public class BottomMenu : ScreenView
                 btn.GetComponent<Image>().color = btn.colors.disabledColor;
             }
 
+            hireButton.enabled = true;
+            hireButton.GetComponent<Image>().color = Color.yellow;
+
             foreach (var refPoint in referencePoints) refPoint.GetComponent<SphereCollider>().enabled = false;
         }
         else

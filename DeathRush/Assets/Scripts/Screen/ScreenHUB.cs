@@ -31,6 +31,7 @@ public class ScreenHUB : MonoBehaviour
         {
             racerButtons[i].UpdateInfo(_playerData.racerList[i]);
         }
+
     }
 
     protected void Update()

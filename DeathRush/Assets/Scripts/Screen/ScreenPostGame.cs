@@ -182,6 +182,16 @@ public class ScreenPostGame : ScreenView
         return amount;
     }
 
+    protected override void Update()
+    {
+        if (_isDestroyed)
+        {
+            _playerData.racerList.RemoveAt(_playerData.selectedRacer);
+            _playerData.selectedRacer = -1;
+            _isDestroyed = false;
+        }
+    }
+
     public override void OnBackButton()
     {
         if (_isDestroyed)

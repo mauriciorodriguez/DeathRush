@@ -46,6 +46,7 @@ public class ScreenSearchRace : ScreenView
     public void OnSearchForRaceButton(int track)
     {
         _totalPilots = _playerData.racerList.Count;
+
         if (_totalPilots > 0 && _playerData.selectedRacer != -1)
         {
             _track = track;

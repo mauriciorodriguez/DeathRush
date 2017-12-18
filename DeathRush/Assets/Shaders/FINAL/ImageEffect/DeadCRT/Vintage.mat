@@ -26,7 +26,7 @@ Material:
       second:
         m_Texture: {fileID: 2800000, guid: e71193f3f3537e74f881f24e89618f1d, type: 3}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 2706.064, y: 0}
+        m_Offset: {x: 757.28503, y: 0}
     - first:
         name: _VigneteTex
       second:
@@ -43,7 +43,7 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 0, g: 0, b: 0, a: 0.534}
+      second: {r: 0.80574864, g: 0.8185077, b: 0.8185077, a: 0.534}
     - first:
         name: _Vector
       second: {r: 2, g: 3, b: 0, a: 0}
