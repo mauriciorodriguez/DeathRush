@@ -130,6 +130,7 @@ public class Country : MonoBehaviour
     public NamesType countryNameEnum;
     public ScreenCountrySelect screenCountrySelect;
     private Material _mat;
+    public ClickSound clickSound;
     private void Awake()
     {
         _mat = GetComponent<Renderer>().sharedMaterial;
@@ -259,6 +260,7 @@ public class Country : MonoBehaviour
         if (screenCountrySelect != null)
         {
             screenCountrySelect.OnSelectCountryButton(this);
+            clickSound.ButtonSound();
         }
     }
 }

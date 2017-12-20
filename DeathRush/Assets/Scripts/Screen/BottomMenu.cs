@@ -53,15 +53,17 @@ public class BottomMenu : ScreenView
         if (_playerData.racerList.Count == 0)
         {
             if (adviceText != null) adviceText.enabled = false;
-            hireButton.GetComponent<Image>().color = Color.yellow;
+            if (hireButton != null) hireButton.GetComponent<Image>().color = Color.yellow;
             foreach (var btn in buttonList)
             {
                 btn.enabled = false;
                 btn.GetComponent<Image>().color = btn.colors.disabledColor;
             }
-
-            hireButton.enabled = true;
-            hireButton.GetComponent<Image>().color = Color.yellow;
+            if (hireButton != null)
+            {
+                hireButton.enabled = true;
+                hireButton.GetComponent<Image>().color = Color.yellow;
+            }
 
             foreach (var refPoint in referencePoints) refPoint.GetComponent<SphereCollider>().enabled = false;
         }

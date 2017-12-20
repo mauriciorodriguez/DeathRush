@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: PlayerTruck
   m_EditorClassIdentifier: 
   vehicleType: 2
-  vehicleName: Kendi
+  vehicleName: Laura
   nitroPower: 50
   nitroTimer: 3
   rechargeNitro: 3
@@ -20,13 +20,13 @@ MonoBehaviour:
   wheelDriveType: 2
   handBrakeForce: 8000
   brakeForce: 500
-  torque: 6600
-  topSpeed: 176
+  torque: 8784.6
+  topSpeed: 234.25601
   topReverseSpeed: 40
   downForce: 40
   stuckForceVehicle: 2000
   minSteerAngle: 5
-  maxSteerAngle: 10
+  maxSteerAngle: 15
   minSidewaysFriction: 6
   maxSidewaysFriction: 6
   stuckToTheFloor: 0
