@@ -89,6 +89,7 @@ public class PressMine : Trap
                     if (GetOwner() != null) { own = GetOwner(); }
                     else own = cols[i].gameObject.GetComponentInParent<IAVehicleData>();
 
+                    if (cols[i].gameObject.GetComponentInParent<IAVehicleData>())
                     cols[i].gameObject.GetComponentInParent<IAVehicleData>().Damage(expDamage, own);
                 }
             }

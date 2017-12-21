@@ -22,7 +22,7 @@ public class ScreenManagerNuevo : MonoBehaviour
     public BottomMenu bottomMenu;
     public PlayerData playerData;
     public GameObject cameraRotationCanvas;
-    private ScreenView _currentScreen;
+    public ScreenView _currentScreen { get; private set; }
 
     private void Awake()
     {

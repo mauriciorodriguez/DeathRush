@@ -64,7 +64,7 @@ public class IngameUIManager : Manager
         if (!_destroyedRacers.ContainsKey(v.uID))
         {
             v.OnDeath -= VehicleDestroyed;
-            _destroyedRacers[v.uID] = v.vehicleVars.vehicleName;
+            _destroyedRacers[v.uID] = v.vehicleName;
         }
     }
 
@@ -78,7 +78,7 @@ public class IngameUIManager : Manager
         {
             v.OnRaceFinished -= VehicleRaceFinished;
     //        v.GetComponentInChildren<Collider>().enabled = false;
-            _endRacerList[v.uID] = v.vehicleVars.vehicleName;
+            _endRacerList[v.uID] = v.vehicleName;
         }
     }
 
@@ -186,13 +186,13 @@ public class IngameUIManager : Manager
         for (int i = 0; i < _racerList.Count; i++)
         {
             if (_racerList[i].hasEnded)
-                positionsText[i].text = "<color=" + ColorTypeConverter.ToRGBHex(endRaceColor) + ">" + (i + 1) + ". " + _racerList[i].vehicleVars.vehicleName + "</color>";
+                positionsText[i].text = "<color=" + ColorTypeConverter.ToRGBHex(endRaceColor) + ">" + (i + 1) + ". " + _racerList[i].vehicleName + "</color>";
             else if (_racerList[i].isDestroyed)
-                positionsText[i].text = "<color=" + ColorTypeConverter.ToRGBHex(destroyedColor) + ">" + (i + 1) + ". " + _racerList[i].vehicleVars.vehicleName + "</color>";
+                positionsText[i].text = "<color=" + ColorTypeConverter.ToRGBHex(destroyedColor) + ">" + (i + 1) + ". " + _racerList[i].vehicleName + "</color>";
             else if (_racerList[i].GetComponent<VehiclePlayerController>())
-                positionsText[i].text = "<color=" + ColorTypeConverter.ToRGBHex(playerColor) + ">" + (i + 1) + ". " + _racerList[i].vehicleVars.vehicleName + "</color>";
+                positionsText[i].text = "<color=" + ColorTypeConverter.ToRGBHex(playerColor) + ">" + (i + 1) + ". " + _racerList[i].vehicleName + "</color>";
             else
-                positionsText[i].text = "<color=" + ColorTypeConverter.ToRGBHex(enemiesColor) + ">" + (i + 1) + ". " + _racerList[i].vehicleVars.vehicleName + "</color>";
+                positionsText[i].text = "<color=" + ColorTypeConverter.ToRGBHex(enemiesColor) + ">" + (i + 1) + ". " + _racerList[i].vehicleName + "</color>";
             positionsText[i].GetComponentInChildren<Image>().sprite = Country.flagSprite[_racerList[i].GetComponent<VehicleData>().country];
         }
     }

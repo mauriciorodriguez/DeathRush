@@ -5493,6 +5493,10 @@ Prefab:
       propertyPath: damageControlText
       value: 
       objectReference: {fileID: 1535160111}
+    - target: {fileID: 11499030, guid: da0958fdfa0e7bd4b869ddbf301e3077, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da0958fdfa0e7bd4b869ddbf301e3077, type: 2}
   m_IsPrefabParent: 0

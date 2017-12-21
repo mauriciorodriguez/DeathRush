@@ -34,6 +34,7 @@ public class BottomMenu : ScreenView
     public bool disableBottomMenu;
 
     public Text adviceText;
+    private ScreenManagerNuevo screenManager;
 
     private void OnEnable()
     {
@@ -46,6 +47,8 @@ public class BottomMenu : ScreenView
         }
         else getResourcesButton.gameObject.SetActive(false);
         _index = -1;
+
+        screenManager = GetComponentInParent<ScreenManagerNuevo>();
     }
 
     private void EnableButtons()
@@ -59,11 +62,18 @@ public class BottomMenu : ScreenView
                 btn.enabled = false;
                 btn.GetComponent<Image>().color = btn.colors.disabledColor;
             }
+
             if (hireButton != null)
             {
                 hireButton.enabled = true;
-                hireButton.GetComponent<Image>().color = Color.yellow;
+                hireButton.GetComponent<Image>().color = Color.green;
             }
+
+            if(screenManager && screenManager._currentScreen is ScreenChaosMap)
+            {
+                buttonList[1].enabled = true;
+                buttonList[1].GetComponent<Image>().color = Color.yellow;
+            } 
 
             foreach (var refPoint in referencePoints) refPoint.GetComponent<SphereCollider>().enabled = false;
         }

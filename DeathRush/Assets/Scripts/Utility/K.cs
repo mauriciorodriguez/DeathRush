@@ -127,6 +127,7 @@ public class K
     public const string OBS_MESSAGE_LAPCOUNT = "Laps";
 
     // ===== LAYERS =====
+    public const int LAYER_DEFAULT = 0;
     public const int LAYER_IGNORERAYCAST = 2;
     public const int LAYER_GROUND = 8;
     public const int LAYER_MNINIMAP_PLAYER_CAR = 9;

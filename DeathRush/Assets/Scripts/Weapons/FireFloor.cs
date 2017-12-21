@@ -28,6 +28,7 @@ public class FireFloor : Ammo {
     {
         if (col.gameObject.layer == K.LAYER_IA)
         {
+            if(col.GetComponentInParent<IAVehicleData>())
             col.GetComponentInParent<IAVehicleData>().Damage(staydamage * 20, _bulletOwner);
         }
     }
@@ -36,7 +37,8 @@ public class FireFloor : Ammo {
     {
         if(col.gameObject.layer == K.LAYER_IA)
         {
-            col.GetComponentInParent<IAVehicleData>().Damage(staydamage, _bulletOwner);
+            if (col.GetComponentInParent<IAVehicleData>())
+                col.GetComponentInParent<IAVehicleData>().Damage(staydamage, _bulletOwner);
         }
     }
 }

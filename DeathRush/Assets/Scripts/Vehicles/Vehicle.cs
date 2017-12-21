@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 public abstract class Vehicle : MonoBehaviour
 {
     public VehicleVars vehicleVars;
-
+    public string vehicleName;
     public static int _uid = 0;
     public Transform primaryWeaponPlaceholder, secondaryWeaponPlaceholder, gadgetPlaceholder;
     public float positionWeight { get; protected set; }

@@ -13,7 +13,7 @@ public class HurtZone : MonoBehaviour
            {
                var vehicleData = c.GetComponentInParent<IAVehicleData>();
                c.GetComponentInParent<IAVehicleData>().Damage(damage, vehicleData);
-               c.GetComponentInParent<VehicleIAController>().ResetCar();
+               if(c.GetComponentInParent<IAVehicleData>() != null) c.GetComponentInParent<VehicleIAController>().ResetCar();
            }
        }
 
@@ -23,7 +23,7 @@ public class HurtZone : MonoBehaviour
            {
                var vehicleData = c.GetComponentInParent<VehicleData>();
                c.GetComponentInParent<VehicleData>().Damage(damage, vehicleData);
-               c.GetComponentInParent<VehiclePlayerController>().ResetCar();
+                if (c.GetComponentInParent<VehicleData>() != null) c.GetComponentInParent<VehiclePlayerController>().ResetCar();
             }
        }
 
@@ -38,7 +38,7 @@ public class HurtZone : MonoBehaviour
             {
                 var vehicleData = c.GetComponentInParent<IAVehicleData>();
                 c.GetComponentInParent<IAVehicleData>().Damage(damage, vehicleData);
-                c.GetComponentInParent<VehicleIAController>().ResetCar();
+                if (c.GetComponentInParent<IAVehicleData>() != null) c.GetComponentInParent<VehicleIAController>().ResetCar();
             }
         }
 
@@ -48,7 +48,7 @@ public class HurtZone : MonoBehaviour
             {
                 var vehicleData = c.GetComponentInParent<VehicleData>();
                 c.GetComponentInParent<VehicleData>().Damage(damage, vehicleData);
-                c.GetComponentInParent<VehiclePlayerController>().ResetCar();
+                if (c.GetComponentInParent<VehicleData>() != null) c.GetComponentInParent<VehiclePlayerController>().ResetCar();
             }
         }
 

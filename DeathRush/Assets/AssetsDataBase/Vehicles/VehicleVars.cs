@@ -35,7 +35,6 @@ public class VehicleVars : ScriptableObject
     };
 
     public Type vehicleType;
-    public string vehicleName;
 
     public float nitroPower, nitroTimer, rechargeNitro;
     public float resetTime;

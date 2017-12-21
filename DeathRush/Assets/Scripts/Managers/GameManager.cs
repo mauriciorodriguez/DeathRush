@@ -148,7 +148,8 @@ public class GameManager : Manager
                 vd.country = countries[j++];
                 var genderTypes = Enum.GetNames(typeof(RacerData.Gender));
                 vd.gender = (RacerData.Gender)Enum.Parse(typeof(RacerData.Gender), genderTypes[UnityEngine.Random.Range(0, genderTypes.Length)]);
-                vehicle.vehicleVars.vehicleName = Country.countriesNames[vd.country][vd.gender][UnityEngine.Random.Range(0, Country.countriesNames[vd.country][vd.gender].Count)];
+                vehicle.vehicleName = Country.countriesNames[vd.country][vd.gender][UnityEngine.Random.Range(0, Country.countriesNames[vd.country][vd.gender].Count)];
+
                 go.GetComponent<VehicleIAController>()._nextCheckpoint = GameObject.FindGameObjectWithTag(K.TAG_CHECKPOINTS).GetComponentInChildren<Checkpoint>();
                 go.GetComponent<Vehicle>().playerRacerID = -1;
                 _enemiesReferences.Add(go.GetComponent<Vehicle>());

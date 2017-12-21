@@ -40,27 +40,29 @@ public class MolotovNPCs : MonoBehaviour
 
     void McInSight()
     {
-        _dirToTarget = (_targetReference.transform.position + _targetReference.transform.up / 2) - (transform.position + transform.up / 20 + transform.forward / 2);
+        _dirToTarget = _targetReference.transform.position - transform.position;
         _angleToTarget = Vector3.Angle(transform.forward, _dirToTarget);
-        _distanceToTarget = Vector3.Distance(transform.position + transform.up / 20 + transform.forward / 2, _targetReference.transform.position + _targetReference.transform.up / 2);
+        _distanceToTarget = Vector3.Distance(transform.position, _targetReference.transform.position);
 
         RaycastHit rch;
         bool obstaclesBetween = false;
-        if (Physics.Raycast(transform.position + transform.up * 2.5f + transform.forward * 1f, _dirToTarget, out rch, _distanceToTarget))
+        if (Physics.Raycast(transform.position + transform.up, _dirToTarget, out rch, _distanceToTarget))
         {
-            if (rch.collider.gameObject.layer == K.LAYER_OBSTACLE) obstaclesBetween = true;
+            if (rch.collider.gameObject.layer == K.LAYER_DEFAULT) obstaclesBetween = true;
         }
 
         if (_angleToTarget <= viewAngle && _distanceToTarget <= viewDistance && !obstaclesBetween) targetInSight = true;
+        else targetInSight = false;
 
         if (targetInSight)
         {
-            _agent.SetDestination(_targetReference.transform.position - transform.forward * 1.5f);
+            _agent.SetDestination(_targetReference.transform.position);
        /*     float xRot = transform.eulerAngles.x;
             transform.LookAt(_targetReference.transform.position);
             transform.eulerAngles = new Vector3(xRot, transform.eulerAngles.y, transform.eulerAngles.z);*/
 
         }
+
     }
 /*
     void OnDrawGizmos()

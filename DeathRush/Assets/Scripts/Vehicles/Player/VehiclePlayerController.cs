@@ -29,7 +29,7 @@ public class VehiclePlayerController : Vehicle
         wrongDirectionText.gameObject.SetActive(false);
         base.Start();
         _racerData = _playerData.racerList[_playerData.selectedRacer];
-        vehicleVars.vehicleName = _racerData.racerName;
+        vehicleName = _racerData.racerName;
         _cameraBloom = Camera.main.GetComponent<Bloom>();
         _cameraViggneteAndChromaticAberration = Camera.main.GetComponent<VignetteAndChromaticAberration>();
         _cameraMotionBlur = Camera.main.GetComponent<MotionBlur>();

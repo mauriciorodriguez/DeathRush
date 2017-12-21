@@ -41,14 +41,14 @@ public class WindowStatsEditor : EditorWindow
             GameObject go = (GameObject)AssetDatabase.LoadAssetAtPath(prefabPath, typeof(GameObject));
             Texture2D tex = AssetPreview.GetAssetPreview(go);
             if (tex) GUI.DrawTexture(GUILayoutUtility.GetRect(200, 200, 200, 200), tex, ScaleMode.ScaleToFit);
-            string vName = vehicle.vehicleVars.vehicleName.ToUpper();
+            string vName = vehicle.vehicleName.ToUpper();
             var isPlayer = vehicle.GetComponent<InputControllerPlayer>();
             var c = GUI.color;
             GUI.color = isPlayer ? Color.green:Color.red;
             EditorGUILayout.LabelField(vName+(isPlayer?"(Player)":"(IA)"), EditorStyles.centeredGreyMiniLabel);
             GUI.color = c;
             EditorGUILayout.Space();
-            vehicle.vehicleVars.vehicleName = EditorGUILayout.TextField("Vehicle Name", vehicle.vehicleVars.vehicleName);
+            vehicle.vehicleName = EditorGUILayout.TextField("Vehicle Name", vehicle.vehicleName);
             var vd = vehicle.GetComponent<VehicleData>();
             vd.maxLife = EditorGUILayout.FloatField("Max Life", vd.maxLife);
             vd.currentLife = EditorGUILayout.FloatField("Current Life", vd.currentLife);
