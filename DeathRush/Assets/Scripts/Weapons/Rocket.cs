@@ -98,11 +98,11 @@ public class Rocket : Ammo
                 coll.GetComponentInParent<IAVehicleData>().Damage(damage, _bulletOwner);
             }
 
-            if (coll.gameObject.layer == K.LAYER_PLAYER && coll.GetComponentInParent<VehicleData>() != null)
+   /*         if (coll.gameObject.layer == K.LAYER_PLAYER && coll.GetComponentInParent<VehicleData>() != null)
             {
                 _soundManagerReference.PlaySound(K.SOUND_MISSILE_HEAVY);
                 coll.GetComponentInParent<PlayerVehicleData>().Damage(damage, _bulletOwner);
-            }
+            }*/
 
             if (coll.gameObject.layer == K.LAYER_DESTRUCTIBLE && coll.GetComponent<Animation>() != null) coll.GetComponent<DestructibleElement>().DestroyDrone();
 

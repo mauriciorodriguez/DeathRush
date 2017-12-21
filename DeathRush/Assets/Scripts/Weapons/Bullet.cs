@@ -44,13 +44,13 @@ public class Bullet : Ammo
             Instantiate(spark, cont + -transform.forward, Quaternion.identity);
             DestroyThis();
         }
-        else if (col.gameObject.layer == K.LAYER_PLAYER)
+      /*  else if (col.gameObject.layer == K.LAYER_PLAYER)
         {
             col.gameObject.GetComponent<PlayerVehicleData>().Damage(powerDamage, _bulletOwner);
             Vector3 cont = col.contacts[0].point;
             Instantiate(spark, cont + -transform.forward, Quaternion.identity);
             DestroyThis();
-        }
+        }*/
         else
         {
             if (col.contacts.Length != 0)

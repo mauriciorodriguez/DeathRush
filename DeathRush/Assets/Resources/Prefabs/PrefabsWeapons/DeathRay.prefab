@@ -5,10 +5,10 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 456876}
-  - 108: {fileID: 10810192}
+  - component: {fileID: 456876}
+  - component: {fileID: 10810192}
   m_Layer: 0
   m_Name: End Light
   m_TagString: Untagged
@@ -21,10 +21,10 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 432698}
-  - 108: {fileID: 10857770}
+  - component: {fileID: 432698}
+  - component: {fileID: 10857770}
   m_Layer: 0
   m_Name: End Light
   m_TagString: Untagged
@@ -37,14 +37,14 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 436646}
-  - 33: {fileID: 3378670}
-  - 114: {fileID: 11478798}
-  - 23: {fileID: 2375798}
-  - 15: {fileID: 1559716}
-  - 26: {fileID: 2637494}
+  - component: {fileID: 436646}
+  - component: {fileID: 3378670}
+  - component: {fileID: 11478798}
+  - component: {fileID: 2375798}
+  - component: {fileID: 1559716}
+  - component: {fileID: 2637494}
   m_Layer: 0
   m_Name: Rayo Lvl3
   m_TagString: Untagged
@@ -57,9 +57,9 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 437770}
+  - component: {fileID: 437770}
   m_Layer: 0
   m_Name: destinoRayo
   m_TagString: Untagged
@@ -72,14 +72,14 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 430644}
-  - 33: {fileID: 3306518}
-  - 114: {fileID: 11480022}
-  - 23: {fileID: 2305920}
-  - 15: {fileID: 1591100}
-  - 26: {fileID: 2656160}
+  - component: {fileID: 430644}
+  - component: {fileID: 3306518}
+  - component: {fileID: 11480022}
+  - component: {fileID: 2305920}
+  - component: {fileID: 1591100}
+  - component: {fileID: 2656160}
   m_Layer: 0
   m_Name: Rayo Lvl2
   m_TagString: Untagged
@@ -92,10 +92,10 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 412538}
-  - 108: {fileID: 10868146}
+  - component: {fileID: 412538}
+  - component: {fileID: 10868146}
   m_Layer: 0
   m_Name: End Light (1)
   m_TagString: Untagged
@@ -108,10 +108,10 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 452890}
-  - 108: {fileID: 10874008}
+  - component: {fileID: 452890}
+  - component: {fileID: 10874008}
   m_Layer: 0
   m_Name: End Light (3)
   m_TagString: Untagged
@@ -124,9 +124,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400396}
+  - component: {fileID: 400396}
   m_Layer: 0
   m_Name: DeathRay
   m_TagString: Untagged
@@ -139,9 +139,9 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 430988}
+  - component: {fileID: 430988}
   m_Layer: 0
   m_Name: VisibleRays
   m_TagString: Untagged
@@ -154,10 +154,10 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 423098}
-  - 108: {fileID: 10866158}
+  - component: {fileID: 423098}
+  - component: {fileID: 10866158}
   m_Layer: 0
   m_Name: End Light
   m_TagString: Untagged
@@ -170,12 +170,12 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22404532}
-  - 222: {fileID: 22201290}
-  - 114: {fileID: 11418648}
-  - 114: {fileID: 11433798}
+  - component: {fileID: 22404532}
+  - component: {fileID: 22201290}
+  - component: {fileID: 11418648}
+  - component: {fileID: 11433798}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -188,10 +188,10 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 444028}
-  - 108: {fileID: 10866550}
+  - component: {fileID: 444028}
+  - component: {fileID: 10866550}
   m_Layer: 0
   m_Name: End Light (2)
   m_TagString: Untagged
@@ -204,9 +204,9 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 443072}
+  - component: {fileID: 443072}
   m_Layer: 0
   m_Name: destinoRayo
   m_TagString: Untagged
@@ -219,11 +219,11 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 471702}
-  - 33: {fileID: 3324402}
-  - 23: {fileID: 2315384}
+  - component: {fileID: 471702}
+  - component: {fileID: 3324402}
+  - component: {fileID: 2315384}
   m_Layer: 0
   m_Name: DeathRay Rotation
   m_TagString: Untagged
@@ -236,9 +236,9 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 496748}
+  - component: {fileID: 496748}
   m_Layer: 0
   m_Name: Point
   m_TagString: Untagged
@@ -251,9 +251,9 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 439280}
+  - component: {fileID: 439280}
   m_Layer: 0
   m_Name: destinoRayo
   m_TagString: Untagged
@@ -266,11 +266,11 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 411228}
-  - 136: {fileID: 13618528}
-  - 114: {fileID: 11420212}
+  - component: {fileID: 411228}
+  - component: {fileID: 13618528}
+  - component: {fileID: 11420212}
   m_Layer: 0
   m_Name: DeathRay
   m_TagString: Untagged
@@ -283,11 +283,11 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22468366}
-  - 222: {fileID: 22239244}
-  - 114: {fileID: 11436956}
+  - component: {fileID: 22468366}
+  - component: {fileID: 22239244}
+  - component: {fileID: 11436956}
   m_Layer: 0
   m_Name: MachineGunBar
   m_TagString: Untagged
@@ -300,14 +300,14 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 409332}
-  - 33: {fileID: 3359704}
-  - 114: {fileID: 11428622}
-  - 23: {fileID: 2351462}
-  - 15: {fileID: 1521716}
-  - 26: {fileID: 2640066}
+  - component: {fileID: 409332}
+  - component: {fileID: 3359704}
+  - component: {fileID: 11428622}
+  - component: {fileID: 2351462}
+  - component: {fileID: 1521716}
+  - component: {fileID: 2640066}
   m_Layer: 0
   m_Name: Rayo Lvl1
   m_TagString: Untagged
@@ -320,11 +320,11 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 457818}
-  - 33: {fileID: 3320126}
-  - 23: {fileID: 2382128}
+  - component: {fileID: 457818}
+  - component: {fileID: 3320126}
+  - component: {fileID: 2382128}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -337,11 +337,11 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22471140}
-  - 222: {fileID: 22286544}
-  - 114: {fileID: 11466822}
+  - component: {fileID: 22471140}
+  - component: {fileID: 22286544}
+  - component: {fileID: 11466822}
   m_Layer: 0
   m_Name: VisualAmmo
   m_TagString: Untagged
@@ -354,12 +354,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22407656}
-  - 223: {fileID: 22340340}
-  - 114: {fileID: 11449156}
-  - 114: {fileID: 11420682}
+  - component: {fileID: 22407656}
+  - component: {fileID: 22340340}
+  - component: {fileID: 11449156}
+  - component: {fileID: 11420682}
   m_Layer: 0
   m_Name: Laser Canvas
   m_TagString: Untagged
@@ -381,6 +381,7 @@ Transform:
   - {fileID: 471702}
   m_Father: {fileID: 411228}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &409332
 Transform:
   m_ObjectHideFlags: 1
@@ -395,6 +396,7 @@ Transform:
   - {fileID: 439280}
   m_Father: {fileID: 430988}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &411228
 Transform:
   m_ObjectHideFlags: 1
@@ -409,6 +411,7 @@ Transform:
   - {fileID: 400396}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &412538
 Transform:
   m_ObjectHideFlags: 1
@@ -421,6 +424,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 439280}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &423098
 Transform:
   m_ObjectHideFlags: 1
@@ -433,6 +437,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 409332}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &430644
 Transform:
   m_ObjectHideFlags: 1
@@ -447,6 +452,7 @@ Transform:
   - {fileID: 437770}
   m_Father: {fileID: 430988}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &430988
 Transform:
   m_ObjectHideFlags: 1
@@ -462,6 +468,7 @@ Transform:
   - {fileID: 436646}
   m_Father: {fileID: 471702}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &432698
 Transform:
   m_ObjectHideFlags: 1
@@ -474,6 +481,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 436646}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &436646
 Transform:
   m_ObjectHideFlags: 1
@@ -488,6 +496,7 @@ Transform:
   - {fileID: 443072}
   m_Father: {fileID: 430988}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &437770
 Transform:
   m_ObjectHideFlags: 1
@@ -501,6 +510,7 @@ Transform:
   - {fileID: 444028}
   m_Father: {fileID: 430644}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &439280
 Transform:
   m_ObjectHideFlags: 1
@@ -514,6 +524,7 @@ Transform:
   - {fileID: 412538}
   m_Father: {fileID: 409332}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &443072
 Transform:
   m_ObjectHideFlags: 1
@@ -527,6 +538,7 @@ Transform:
   - {fileID: 452890}
   m_Father: {fileID: 436646}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &444028
 Transform:
   m_ObjectHideFlags: 1
@@ -539,6 +551,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 437770}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &452890
 Transform:
   m_ObjectHideFlags: 1
@@ -551,6 +564,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 443072}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &456876
 Transform:
   m_ObjectHideFlags: 1
@@ -563,6 +577,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 430644}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &457818
 Transform:
   m_ObjectHideFlags: 1
@@ -575,6 +590,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400396}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &471702
 Transform:
   m_ObjectHideFlags: 1
@@ -589,6 +605,7 @@ Transform:
   - {fileID: 496748}
   m_Father: {fileID: 400396}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &496748
 Transform:
   m_ObjectHideFlags: 1
@@ -601,6 +618,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 471702}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!15 &1521716
 EllipsoidParticleEmitter:
   m_ObjectHideFlags: 1
@@ -691,17 +709,22 @@ MeshRenderer:
   m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: b73b3a3dca9ce1a44aff1f3b53fbe79b, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -717,17 +740,22 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 2c042e0d13875f54cbecfb8dcf7e62ca, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -743,17 +771,22 @@ MeshRenderer:
   m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: b73b3a3dca9ce1a44aff1f3b53fbe79b, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -769,17 +802,22 @@ MeshRenderer:
   m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: b73b3a3dca9ce1a44aff1f3b53fbe79b, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -795,17 +833,22 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 2c042e0d13875f54cbecfb8dcf7e62ca, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -821,17 +864,22 @@ ParticleRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 329e9dbe92608be489dbd889b40a1287, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -857,17 +905,22 @@ ParticleRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: bcaf5ef7bbbc61c45bb763278ca5bd67, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -893,17 +946,22 @@ ParticleRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: a2ebe3b0b2e136942839a9381d61d415, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -962,7 +1020,7 @@ Light:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124270}
   m_Enabled: 0
-  serializedVersion: 6
+  serializedVersion: 7
   m_Type: 2
   m_Color: {r: 0, g: 1, b: 0, a: 0.3137255}
   m_Intensity: 2
@@ -972,6 +1030,7 @@ Light:
   m_Shadows:
     m_Type: 0
     m_Resolution: -1
+    m_CustomResolution: -1
     m_Strength: 0.8
     m_Bias: 0.05
     m_NormalBias: 0.4
@@ -984,10 +1043,10 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_Lightmapping: 1
+  m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
-  m_AreaSize: {x: 1, y: 1}
 --- !u!108 &10857770
 Light:
   m_ObjectHideFlags: 1
@@ -995,7 +1054,7 @@ Light:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124392}
   m_Enabled: 0
-  serializedVersion: 6
+  serializedVersion: 7
   m_Type: 2
   m_Color: {r: 1, g: 0, b: 0, a: 0.3137255}
   m_Intensity: 2
@@ -1005,6 +1064,7 @@ Light:
   m_Shadows:
     m_Type: 0
     m_Resolution: -1
+    m_CustomResolution: -1
     m_Strength: 0.8
     m_Bias: 0.05
     m_NormalBias: 0.4
@@ -1017,10 +1077,10 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_Lightmapping: 1
+  m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
-  m_AreaSize: {x: 1, y: 1}
 --- !u!108 &10866158
 Light:
   m_ObjectHideFlags: 1
@@ -1028,7 +1088,7 @@ Light:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 149776}
   m_Enabled: 0
-  serializedVersion: 6
+  serializedVersion: 7
   m_Type: 2
   m_Color: {r: 0.15234607, g: 0.8598459, b: 0.997528, a: 1}
   m_Intensity: 2
@@ -1038,6 +1098,7 @@ Light:
   m_Shadows:
     m_Type: 0
     m_Resolution: -1
+    m_CustomResolution: -1
     m_Strength: 0.8
     m_Bias: 0.05
     m_NormalBias: 0.4
@@ -1050,10 +1111,10 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_Lightmapping: 1
+  m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
-  m_AreaSize: {x: 1, y: 1}
 --- !u!108 &10866550
 Light:
   m_ObjectHideFlags: 1
@@ -1061,7 +1122,7 @@ Light:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162150}
   m_Enabled: 1
-  serializedVersion: 6
+  serializedVersion: 7
   m_Type: 2
   m_Color: {r: 0, g: 1, b: 0, a: 0.3137255}
   m_Intensity: 2.84
@@ -1071,6 +1132,7 @@ Light:
   m_Shadows:
     m_Type: 0
     m_Resolution: -1
+    m_CustomResolution: -1
     m_Strength: 0.8
     m_Bias: 0.05
     m_NormalBias: 0.4
@@ -1083,10 +1145,10 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1.37
   m_ShadowRadius: 0
   m_ShadowAngle: 0
-  m_AreaSize: {x: 1, y: 1}
 --- !u!108 &10868146
 Light:
   m_ObjectHideFlags: 1
@@ -1094,7 +1156,7 @@ Light:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135018}
   m_Enabled: 1
-  serializedVersion: 6
+  serializedVersion: 7
   m_Type: 2
   m_Color: {r: 0.15234607, g: 0.8598459, b: 0.997528, a: 1}
   m_Intensity: 2.84
@@ -1104,6 +1166,7 @@ Light:
   m_Shadows:
     m_Type: 0
     m_Resolution: -1
+    m_CustomResolution: -1
     m_Strength: 0.8
     m_Bias: 0.05
     m_NormalBias: 0.4
@@ -1116,10 +1179,10 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1.37
   m_ShadowRadius: 0
   m_ShadowAngle: 0
-  m_AreaSize: {x: 1, y: 1}
 --- !u!108 &10874008
 Light:
   m_ObjectHideFlags: 1
@@ -1127,7 +1190,7 @@ Light:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 140284}
   m_Enabled: 1
-  serializedVersion: 6
+  serializedVersion: 7
   m_Type: 2
   m_Color: {r: 1, g: 0, b: 0, a: 0.3137255}
   m_Intensity: 2.84
@@ -1137,6 +1200,7 @@ Light:
   m_Shadows:
     m_Type: 0
     m_Resolution: -1
+    m_CustomResolution: -1
     m_Strength: 0.8
     m_Bias: 0.05
     m_NormalBias: 0.4
@@ -1149,10 +1213,10 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1.37
   m_ShadowRadius: 0
   m_ShadowAngle: 0
-  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &11418648
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1195,7 +1259,7 @@ MonoBehaviour:
   activeShoot: 0
   cooldown: 0
   shootButtom: 0
-  damage: 1
+  damage: 5
   isCrosshair: 0
   crosshair: {fileID: 0}
   visualAmmo: {fileID: 11466822}
@@ -1205,7 +1269,7 @@ MonoBehaviour:
   missileCountAmmo: 10
   reloadSpeed: 0.7
   ammoTimer: 5
-  reach: 40
+  reach: 100
   screenPercent: 50
   maxMinAngle: 20
   myCollider: {fileID: 0}
@@ -1437,6 +1501,7 @@ RectTransform:
   - {fileID: 22471140}
   m_Father: {fileID: 22468366}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -1, y: 11.4}
@@ -1455,6 +1520,7 @@ RectTransform:
   - {fileID: 22468366}
   m_Father: {fileID: 411228}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 1.63}
@@ -1473,6 +1539,7 @@ RectTransform:
   - {fileID: 22404532}
   m_Father: {fileID: 22407656}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1490,6 +1557,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22404532}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.08, y: 0}

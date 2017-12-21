@@ -101,7 +101,7 @@ public class LaserBean : Weapon
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.layer == K.LAYER_IA && col.GetComponentInParent<IAVehicleData>() != null)
+        if (col.gameObject.layer == K.LAYER_IA && col.GetComponentInParent<IAVehicleData>() != null && Input.GetMouseButton(0))
         {
             print(col.gameObject);
             col.GetComponentInParent<IAVehicleData>().Damage(damage * 10, _owner);
@@ -110,7 +110,7 @@ public class LaserBean : Weapon
 
     void OnTriggerStay(Collider col)
     {
-        if (col.gameObject.layer == K.LAYER_IA && col.GetComponentInParent<IAVehicleData>() != null)
+        if (col.gameObject.layer == K.LAYER_IA && col.GetComponentInParent<IAVehicleData>() != null && Input.GetMouseButton(0))
         {
             col.GetComponentInParent<IAVehicleData>().Damage(damage, _owner);
         }

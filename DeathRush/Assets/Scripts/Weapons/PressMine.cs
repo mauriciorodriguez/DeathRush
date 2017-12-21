@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PressMine : Trap
 {
@@ -18,6 +19,9 @@ public class PressMine : Trap
     public override void Update()
     {
         base.Update();
+
+        if (feedLight == null) return;
+
         if (currentCool < coolLig)
         {
             feedLight.SetActive(false);
@@ -32,7 +36,7 @@ public class PressMine : Trap
 
     public void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.layer == K.LAYER_PLAYER || col.gameObject.layer == K.LAYER_IA || col.gameObject.layer == K.LAYER_MISSILE)
+        if (col.gameObject.layer == K.LAYER_PLAYER || col.gameObject.layer == K.LAYER_IA || col.gameObject.layer == K.LAYER_MISSILE || col.gameObject.layer == K.LAYER_IGNORERAYCAST && col.GetComponent<FireFloor>())
         {
             if (col.gameObject != null && !touched)
                 touched = true;
@@ -92,6 +96,8 @@ public class PressMine : Trap
         Instantiate(feedback, transform.position + transform.up, Quaternion.identity);
         //   sound.Play();        
         Destroy(this.gameObject);
+
+        if (transform.GetComponentInParent<NavMeshAgent>() != null) Destroy(transform.parent.gameObject);
     }
 
 }

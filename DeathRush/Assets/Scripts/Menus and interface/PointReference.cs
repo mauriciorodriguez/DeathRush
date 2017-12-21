@@ -21,6 +21,7 @@ public class PointReference : MonoBehaviour
     private bool _mouseIsOver;
     public ScreenGarage screenGarage;
     public VehicleVars.Type vehicleType;
+    public ClickSound clickSound;
 
     private void Awake()
     {
@@ -66,6 +67,8 @@ public class PointReference : MonoBehaviour
                 else if (vehicleType == VehicleVars.Type.Alien) screenGarage.SelectVehicle(vehicleType);
             }
         }
+
+        clickSound.ButtonSound();
     }
 
     private void OnMouseOver()

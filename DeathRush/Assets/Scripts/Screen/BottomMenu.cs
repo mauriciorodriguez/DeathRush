@@ -90,7 +90,11 @@ public class BottomMenu : ScreenView
         if (disableBottomMenu) return;
 
         textResources.text = "$ " + _playerData.resources;
-        if (Input.GetKeyDown(KeyCode.F11)) PlayerData.instance.resources = 9999999;
+        if (Input.GetKeyDown(KeyCode.F11))
+        {
+            PlayerData.instance.resources = 9999999;
+            PlayerData.instance.racesCompleted = 10;
+        }
         bool canHireRacer = _playerData.racerList.Count > 0 ? true : _playerData.canHireNewRacers;
         if (_playerData.racerList.Count == 0 && !_playerData.canHireNewRacers)
         {
