@@ -1282,7 +1282,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1258894530583344}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -74.792435, y: 29.71249, z: 315.27094}
+  m_LocalPosition: {x: -740.459, y: 378.75766, z: 2030.5339}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4528099378013412}
@@ -2704,7 +2704,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1258894530583344}
   serializedVersion: 2
-  m_Mass: 100
+  m_Mass: 1000
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -2994,6 +2994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vehicleVars: {fileID: 11400000, guid: e603fb32529258644806c0bd4ba51de8, type: 2}
+  vehicleName: 
   primaryWeaponPlaceholder: {fileID: 4140280054336620}
   secondaryWeaponPlaceholder: {fileID: 4972030133793820}
   gadgetPlaceholder: {fileID: 4270268473032814}

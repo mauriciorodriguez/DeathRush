@@ -22,6 +22,13 @@ public class ScreenHUB : MonoBehaviour
         //cameraMenu.setMount(cameraMenu.hubMount);
         _playerData = PlayerData.instance;
         _racersCount = 1;
+
+        if (_playerData != null)
+        {
+            InitButtons();
+            ShowSelectedInfo();
+            _racersCount = _playerData.racerList.Count;
+        }
     }
 
     private void InitButtons()

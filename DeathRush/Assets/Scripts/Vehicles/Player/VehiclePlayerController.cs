@@ -125,7 +125,7 @@ public class VehiclePlayerController : Vehicle
         }
 
         //PRUEBA
-        if (Input.GetKeyUp(KeyCode.F1))
+  /*      if (Input.GetKeyUp(KeyCode.F1))
         {
             //CheckBars();
             _canRechargeNitro = true;
@@ -204,7 +204,7 @@ public class VehiclePlayerController : Vehicle
             {
                 debugInput.text = "F6: Desactivado Spikes Perk. Ya no daña al chocar";
             }
-        }
+        }*/
     }
 
     private void CheckShakeCamera()

@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Name: IABuggy
   m_EditorClassIdentifier: 
   vehicleType: 0
-  vehicleName: Cho
   nitroPower: 10000
   nitroTimer: 1.5
   rechargeNitro: 1.5
@@ -20,8 +19,8 @@ MonoBehaviour:
   wheelDriveType: 0
   handBrakeForce: 6000
   brakeForce: 500
-  torque: 2700
-  topSpeed: 30
+  torque: 3630
+  topSpeed: 500
   topReverseSpeed: 50
   downForce: 40
   stuckForceVehicle: 700

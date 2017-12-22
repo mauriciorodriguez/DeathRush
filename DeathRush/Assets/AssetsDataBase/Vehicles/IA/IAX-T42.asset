@@ -12,21 +12,20 @@ MonoBehaviour:
   m_Name: IAX-T42
   m_EditorClassIdentifier: 
   vehicleType: 3
-  vehicleName: Vladimir
   nitroPower: 10000
   nitroTimer: 3
   rechargeNitro: 3
   resetTime: 0.5
-  wheelDriveType: 2
+  wheelDriveType: 0
   handBrakeForce: 6000
   brakeForce: 500
-  torque: 3000
+  torque: 2000
   topSpeed: 180
   topReverseSpeed: 50
-  downForce: 40
+  downForce: 30
   stuckForceVehicle: 700
   minSteerAngle: 10
-  maxSteerAngle: 15
+  maxSteerAngle: 11
   minSidewaysFriction: 4.5
-  maxSidewaysFriction: 6
+  maxSidewaysFriction: 4.8
   stuckToTheFloor: 0

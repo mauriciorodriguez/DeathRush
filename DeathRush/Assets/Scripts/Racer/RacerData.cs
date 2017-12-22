@@ -62,7 +62,7 @@ public class RacerData
         maxLife = mLife;
         currentLife = maxLife;
         equippedPrimaryWeapon = Weapon.Type.MissileLuncher;
-        equippedSecondaryWeapon = Weapon.Type.LockLauncher;
+        equippedSecondaryWeapon = Weapon.Type.MolotovLauncher;
         equippedGadget = Weapon.Type.Mines;
         AddExperience(rExp);
         SetClass(rClass);

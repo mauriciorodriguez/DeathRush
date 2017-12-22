@@ -83,7 +83,7 @@ public class PlayerData : MonoBehaviour
             }
 
             unlockedWeapons.Add(Weapon.Type.Turret);
-            unlockedWeapons.Add(Weapon.Type.MolotovLauncher);
+            unlockedWeapons.Add(Weapon.Type.LockLauncher);
             racer.SaveRacer(_racerCount);
             _racerCount++;
         }

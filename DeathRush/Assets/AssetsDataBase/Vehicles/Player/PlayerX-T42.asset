@@ -25,7 +25,7 @@ MonoBehaviour:
   downForce: 30
   stuckForceVehicle: 700
   minSteerAngle: 10
-  maxSteerAngle: 15
+  maxSteerAngle: 11
   minSidewaysFriction: 4.5
-  maxSidewaysFriction: 6
+  maxSidewaysFriction: 4.8
   stuckToTheFloor: 0
