@@ -52,7 +52,7 @@ public class DestructibleElement : MonoBehaviour
            transform.parent.transform.parent.gameObject.GetComponentInChildren<Rigidbody>().isKinematic = false;
            transform.parent.transform.parent.gameObject.GetComponentInChildren<ConstantForce>().force = new Vector3(0, -100, 0);
            Instantiate(destructibleElement, transform.position, transform.rotation);
-       }*/
+       }
 
        if (coll.gameObject.layer == K.LAYER_IA)
        {
@@ -61,7 +61,7 @@ public class DestructibleElement : MonoBehaviour
            Instantiate(destructibleElement, transform.position, transform.rotation);
            Destroy(transform.parent.gameObject);
        }
-       else Destroy(transform.parent.gameObject, 5);
+       else Destroy(transform.parent.gameObject, 5);*/
 
    }
 

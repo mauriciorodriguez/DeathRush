@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Name: PlayerX-T42
   m_EditorClassIdentifier: 
   vehicleType: 3
-  vehicleName: Player
   nitroPower: 50
   nitroTimer: 3
   rechargeNitro: 3
@@ -23,7 +22,7 @@ MonoBehaviour:
   torque: 3500
   topSpeed: 180
   topReverseSpeed: 50
-  downForce: 40
+  downForce: 30
   stuckForceVehicle: 700
   minSteerAngle: 10
   maxSteerAngle: 15

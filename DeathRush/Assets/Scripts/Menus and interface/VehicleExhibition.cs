@@ -25,19 +25,22 @@ public class VehicleExhibition : MonoBehaviour
     {
         if (_playerData != null && _playerData.racerList.Count > 0 && _vehicleToExhibit)
         {
-            if (_playerData.racerList[_playerData.selectedRacer].equippedPrimaryWeapon != _vehicleToExhibit.primaryWeaponPlaceholder.GetComponentInChildren<Weapon>().weaponType)
+            if (_playerData.selectedRacer != -1)
             {
-                Destroy(_vehicleToExhibit.primaryWeaponPlaceholder.GetComponentInChildren<Weapon>().gameObject);
-                _vehicleToExhibit.InstantiateWeapons(_playerData.racerList[_playerData.selectedRacer].equippedPrimaryWeapon, Weapon.Type.Null, Weapon.Type.Null, true);
-            }
-            else if (_playerData.racerList[_playerData.selectedRacer].equippedSecondaryWeapon != _vehicleToExhibit.secondaryWeaponPlaceholder.GetComponentInChildren<Weapon>().weaponType)
-            {
-                Destroy(_vehicleToExhibit.secondaryWeaponPlaceholder.GetComponentInChildren<Weapon>().gameObject);
-                _vehicleToExhibit.InstantiateWeapons(Weapon.Type.Null, _playerData.racerList[_playerData.selectedRacer].equippedSecondaryWeapon, Weapon.Type.Null, true);
-            }
-            else if (Weapon.prefabsDict[_playerData.racerList[_playerData.selectedRacer].equippedGadget]() != _vehicleToExhibit.gadgetPlaceholder.GetComponent<GadgetLauncher>().GetGadget())
-            {
-                _vehicleToExhibit.InstantiateWeapons(Weapon.Type.Null, Weapon.Type.Null, _playerData.racerList[_playerData.selectedRacer].equippedGadget, true);
+                if (_playerData.racerList[_playerData.selectedRacer].equippedPrimaryWeapon != _vehicleToExhibit.primaryWeaponPlaceholder.GetComponentInChildren<Weapon>().weaponType)
+                {
+                    Destroy(_vehicleToExhibit.primaryWeaponPlaceholder.GetComponentInChildren<Weapon>().gameObject);
+                    _vehicleToExhibit.InstantiateWeapons(_playerData.racerList[_playerData.selectedRacer].equippedPrimaryWeapon, Weapon.Type.Null, Weapon.Type.Null, true);
+                }
+                else if (_playerData.racerList[_playerData.selectedRacer].equippedSecondaryWeapon != _vehicleToExhibit.secondaryWeaponPlaceholder.GetComponentInChildren<Weapon>().weaponType)
+                {
+                    Destroy(_vehicleToExhibit.secondaryWeaponPlaceholder.GetComponentInChildren<Weapon>().gameObject);
+                    _vehicleToExhibit.InstantiateWeapons(Weapon.Type.Null, _playerData.racerList[_playerData.selectedRacer].equippedSecondaryWeapon, Weapon.Type.Null, true);
+                }
+                else if (Weapon.prefabsDict[_playerData.racerList[_playerData.selectedRacer].equippedGadget]() != _vehicleToExhibit.gadgetPlaceholder.GetComponent<GadgetLauncher>().GetGadget())
+                {
+                    _vehicleToExhibit.InstantiateWeapons(Weapon.Type.Null, Weapon.Type.Null, _playerData.racerList[_playerData.selectedRacer].equippedGadget, true);
+                }
             }
         }
     }

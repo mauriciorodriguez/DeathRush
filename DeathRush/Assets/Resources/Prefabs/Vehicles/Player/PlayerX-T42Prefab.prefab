@@ -1589,6 +1589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vehicleVars: {fileID: 11400000, guid: a2af2e45ec4320346be003acc5860564, type: 2}
+  vehicleName: 
   primaryWeaponPlaceholder: {fileID: 4195762217211130}
   secondaryWeaponPlaceholder: {fileID: 4352899743423294}
   gadgetPlaceholder: {fileID: 4406484984326546}

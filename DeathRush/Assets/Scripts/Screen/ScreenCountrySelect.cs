@@ -13,6 +13,11 @@ public class ScreenCountrySelect : ScreenView {
     public Country.NamesType countryEnum;
     private Renderer[] renderers;
     private Material[] mats;
+
+    public Material countrySelectBackground;
+    public MeshRenderer background;
+    private Material _defaultBackground;
+
     private void OnEnable()
     {
         cameraMenu.setMount(cameraMenu.selectCountry);
@@ -29,6 +34,10 @@ public class ScreenCountrySelect : ScreenView {
                 mat.SetFloat("_EdgeWidth", 0);
             }
         }
+        _defaultBackground = background.sharedMaterial;
+
+        background.sharedMaterial = countrySelectBackground;
+
     }
 
     /// <summary>
@@ -58,6 +67,8 @@ public class ScreenCountrySelect : ScreenView {
         PlayerData.instance.countryType = countryEnum;
         K.countryFlag = flag.sprite;
         OnCountrySelect();
+
+        background.sharedMaterial = _defaultBackground;
     }
 
 }

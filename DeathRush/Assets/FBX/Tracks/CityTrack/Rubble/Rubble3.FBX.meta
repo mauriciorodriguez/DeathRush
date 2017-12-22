@@ -681,7 +681,7 @@ ModelImporter:
     4300266: Broken3_frag_007
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 1
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4

@@ -10,16 +10,14 @@ public class ScreenMyWeapons : MonoBehaviour
 
     private void Awake()
     {
-     //   cameraMenu.setMount(cameraMenu.myWeaponsMount);
+        //   cameraMenu.setMount(cameraMenu.myWeaponsMount);
         _playerData = PlayerData.instance;
     }
-
-
     protected void Update()
     {
         if (_playerData == null)
         {
-            Awake();
+            _playerData = PlayerData.instance;
             return;
         }
 

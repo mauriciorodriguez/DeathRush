@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityStandardAssets.ImageEffects;
 using System;
+using UnityEngine.SceneManagement;
 
 public class VehiclePlayerController : Vehicle
 {
@@ -114,7 +115,14 @@ public class VehiclePlayerController : Vehicle
         CheckBars();
         CheckDirection();
         CheckShakeCamera();
-        if (Input.GetKeyDown(KeyCode.R) && _canForceRespawn) ResetCar();
+        if (Input.GetKeyDown(KeyCode.R) && GetComponent<InputControllerPlayer>().enabled)
+        {
+            if (SceneManager.GetActiveScene().buildIndex == (int)SCENES_NUMBER.Satellitrack || SceneManager.GetActiveScene().buildIndex == (int)SCENES_NUMBER.InsideTheCore)
+            {
+                if( isGrounded || _isGroundedRamp) ResetCar();
+            }
+            else ResetCar();
+        }
 
         //PRUEBA
         if (Input.GetKeyUp(KeyCode.F1))

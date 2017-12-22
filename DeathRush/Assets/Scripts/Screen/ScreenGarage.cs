@@ -40,7 +40,7 @@ public class ScreenGarage : MonoBehaviour
     }
     private void UpdateGarage()
     {
-        if (_playerData.selectedRacer != _selectedRacer)
+        if (_playerData.selectedRacer != _selectedRacer && _playerData.selectedRacer != -1)
         {
             foreach (var vh in vehicles)
             {

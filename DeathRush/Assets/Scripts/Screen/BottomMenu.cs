@@ -118,9 +118,7 @@ public class BottomMenu : ScreenView
             }
         }
         if (_playerData.countryChaos[_playerData.countryType] >= 100 ||
-            _playerData.countryChaos.Keys.Where(x => x != _playerData.countryType).ToList().Aggregate(0, (a, c) => a += _playerData.countryChaos[c]) >= 500 ||
-            !canHireRacer
-            )
+            _playerData.countryChaos.Keys.Where(x => x != _playerData.countryType).ToList().Aggregate(0, (a, c) => a += _playerData.countryChaos[c]) >= 500)
         {
             OnGameOver();
         }
@@ -155,17 +153,14 @@ public class BottomMenu : ScreenView
 
     public void OnGetResourcesButton()
     {
-        if (_playerData.selectedRacer != -1)
-        {
-            _playerData.resources += resourcesChaos;
-            _playerData.countryChaos[_playerData.countryType] += chaosResources;
-            screenChaosMap.SetData();
-            if (_playerData.countryChaos[_playerData.countryType] + chaosResources < 100) getResourcesButton.gameObject.SetActive(true);
-            else getResourcesButton.gameObject.SetActive(false);
+        _playerData.resources += resourcesChaos;
+        _playerData.countryChaos[_playerData.countryType] += chaosResources;
+        screenChaosMap.SetData();
+        if (_playerData.countryChaos[_playerData.countryType] + chaosResources < 100) getResourcesButton.gameObject.SetActive(true);
+        else getResourcesButton.gameObject.SetActive(false);
 
-            //Update chaos
-            textChaos.text = "Chaos: " + _playerData.countryChaos[_playerData.countryType] + "%";
-        }
+        //Update chaos
+        textChaos.text = "Chaos: " + _playerData.countryChaos[_playerData.countryType] + "%";
     }
 
     public void BTNShowWeapons(GameObject refPoint)

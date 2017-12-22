@@ -28,7 +28,6 @@ public class Burner : Weapon
 
         if (GameManager.disableShoot == false && activeShoot && shootButtom != 3)
         {
-
             if (Input.GetMouseButton(shootButtom) && visualAmmo.fillAmount > 0)
             {
                 activeFeed = true;
@@ -69,6 +68,8 @@ public class Burner : Weapon
 
     private void CheckAmmoBar()
     {
+        if (!visualAmmo) return;
+
         visualAmmo.GetComponentInParent<Canvas>().transform.LookAt(Camera.main.transform.position);
         float calc_ammo = _ammoTimer / ammoTimer;
         visualAmmo.fillAmount = calc_ammo;

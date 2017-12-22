@@ -893,7 +893,7 @@ ModelImporter:
     4300350: Broken1_frag_041
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 1
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4

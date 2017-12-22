@@ -58,6 +58,7 @@ public class FreezeTrap : MonoBehaviour
 
         if (col.gameObject.layer == K.LAYER_IA)
         {
+            if (!col.GetComponentInParent<IAVehicleData>()) return;
             _freezeVehicles.Add(true);
             _vehicles.Add(col.GetComponentInParent<VehicleIAController>());
             _defrostTimerVehicles.Add(defrostTimer);
